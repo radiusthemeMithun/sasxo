@@ -1,0 +1,181 @@
+
+
+.ayo-function-box-1 {
+    margin-bottom: 70px;
+    @include media-only ("md", min) {
+        margin-bottom: 0px;
+    }
+    @include media-only ("lg", min) {
+        padding-right: 105px;
+    }
+    .section-heading {
+        .heading-title {
+            color: var(--color-white);
+        }
+    }
+    .skills-wrap-layout {
+        .item-title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 46px;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+        .single-skill-wrapper {
+            .single-skill {
+                margin-bottom: 40px;
+                .title-bar {
+                    .title {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 25px;
+                        margin-bottom: 12px;
+                        color: var(--color-white);
+                    }
+                }
+                .skill-bar {
+                    background: #D9D9D9;
+                    border-radius: 10px;
+                    height: 5px;
+                    padding: 0;
+                    border: 0;
+                    .skill-per {
+                        height: 5px;
+                        width: 0;
+                        background: #2790F0;
+                        border-radius: 10px;
+                        transition: 2s linear;
+                        position: relative;
+                        &::before {
+                            content: attr(data-per);
+                            position: absolute;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 20px;
+                            color: #BCBABA;
+                            bottom: 20px;
+                            right: 0;
+                            font-family: var(--font-body);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ayo-function-box-1.style-2 {
+    margin-bottom: 0;
+    .section-heading {
+        margin-bottom: 23px;
+        .heading-title {
+            color: $color-black;
+        }
+    }
+    .content {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.ayo-function-box-2 {
+    position: relative;
+    z-index: 1;
+    .item-img {
+        position: relative;
+        text-align: center;
+        top: -70px;
+        .element-shape {
+            display: none;
+            @include media-only ("sm", min) {
+                display: block;
+            }
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    top: 60px;
+                    right: 0;
+                }
+                &:nth-child(2) {
+                    bottom: -36px;
+                    right: 0;
+                }
+                &:nth-child(3) {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+            }
+        }
+    }
+    .shape {
+        background: linear-gradient(213.25deg, rgba(171, 73, 168, 0.1) 13.98%, rgba(244, 126, 135, 0.1) 85.82%);
+        width: 550px;
+        height: 550px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0px;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+.ayo-function-box-2.style-2 {
+    .item-img {
+        top: auto;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        .element {
+            display: none;
+            @include media-only ("sm", min) {
+                display: block;
+            }
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    bottom: 105px;
+                    right: 0;
+                }
+                &:nth-child(2) {
+                    bottom: 190px;
+                    left: 10px;
+                }
+            }
+        }
+    }
+    .shape {
+        background: #FFECE6;
+        width: 526px;
+        height: 526px;
+        z-index: -1;
+        display: none;
+        @include media-only ("xs", min) {
+            display: block;
+        }
+    }
+    .dot-shape {
+        position: absolute;
+        top: 180px;
+        left: 0;
+        z-index: -2;
+        display: none;
+        @include media-only ("sm", min) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,659 @@
+.ayo-portfolio-box {
+    &:hover {
+        .item-img {
+            &::before {
+                opacity: .5;
+                transform: scale(1);
+            }
+            &::after {
+                opacity: .5;
+                transform: scale(1);
+            }
+        }
+    }
+    .item-img {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        &::before {
+            transition: all .5s ease;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #8258F9;
+            transform: scale(0);
+            border-radius: 10px;
+        }
+        &::after {
+            transition: all .6s ease .2s;
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid #4606FC;
+            background: #6230F0;
+            opacity: 0;
+            transform: scale(0);
+            border-radius: 10px;
+        }
+        a {
+            width: 100%;
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+    }
+    .content {
+        padding-top: 28px;
+        padding-left: 25px;
+        position: relative;
+        &:hover {
+            &::after {
+                background: #145AFF;
+                transition: all .4s ease-in-out;
+            }
+        }
+        &::after {
+            content: "";
+            height: 100%;
+            width: 2px;
+            background: #454546;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            transition: all .4s ease-in-out;
+        }
+        .title {
+            margin-bottom: 0px;
+            a {
+                font-size: 20px;
+                line-height: 28px;
+                color: var(--color-white);
+                transition: all .4s ease-in-out;
+                @include media-only ("xs", min) {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                @include media-only ("md", min) {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+        p {
+            color: #A4A4A4;
+            margin-bottom: 10px;
+        }
+        .post-btn {
+            a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                color: #145AFF;
+                transition: all .4s ease-in-out;
+                position: relative;
+                &:hover {
+                    color: var(--color-purple);
+                    &::before {
+                        opacity: 1;
+                        text-indent: 65px;
+                        color: var(--color-white);
+                    }
+                }
+                &::before {
+                    content: "\f061";
+                    font-family: FontAwesome;
+                    font-size: 15px;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    right: 0;
+                    top: 0;
+                    opacity: 0;
+                    height: 100%;
+                    width: 40px;
+                    transition: all 0.2s linear 0s;
+                }
+            }
+        }
+    }
+}
+
+.ayo-portfolio-inner-wrap {
+    margin-bottom: 50px;
+    .ayo-button {
+        text-align: center;
+        margin-top: 25px;
+        .ayo-btn {
+            svg {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.ayo-portfolio-box.style-2 {
+    margin-bottom: 35px;
+    .content {
+        &:hover {
+            &::after {
+                background: #145AFF;
+                transition: all .4s ease-in-out;
+            }
+        }
+        &::after {
+            content: "";
+            height: 120px;
+            width: 2px;
+            background: #145AFF;
+        }
+        .title {
+            margin-bottom: 0px;
+            a {
+                font-size: 20px;
+                line-height: 28px;
+                color: var(--color-black);
+                transition: all .4s ease-in-out;
+                @include media-only ("xs", min) {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                @include media-only ("lg", min) {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+        p {
+            color: $font-body;
+        }
+        .post-btn {
+            a {
+                position: relative;
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                        text-indent: 65px;
+                        color: var(--color-black);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ayo-portfolio-box-2 {
+    &:hover {
+        .item-img {
+            a {
+                img {
+                    transform: translate3d(0,-150px,0);
+                }
+            }
+            .content {
+                opacity: 1;
+                transform: translate3d(0,0,0);
+            }
+        }
+    }
+    .item-img {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        max-width: 534px;
+        max-height: 630px;
+        // width: 48%;
+        height: auto;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-bottom: 18px;
+        @include media-only ("lg", min) {
+            min-width: 520px;
+            max-width: 634px;
+            max-height: 630px;
+            margin-bottom: 24px;
+        }
+        a {
+            border-radius: 10px;
+            img {
+                display: block;
+                min-height: 100%;
+                max-width: 100%;
+                backface-visibility: hidden;
+                transition: transform 0.45s;
+                border-radius: 10px;
+            }
+        }
+    }
+    .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        backface-visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.45s, transform 0.45s;
+        transform: translate3d(0,50px,0);
+        width: 100%;
+        padding: 20px;
+        &:hover {
+            &::after {
+                background: #145AFF;
+                transition: all .4s ease-in-out;
+            }
+        }
+        &::after {
+            content: "";
+            height: 100%;
+            width: 2px;
+            background: #145AFF;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            transition: all .4s ease-in-out;
+            @include media-only ("lg", min) {
+                height: 120px;
+            }
+        }
+        .title {
+            margin-bottom: 0px;
+            a {
+                font-size: 20px;
+                line-height: 28px;
+                color: var(--color-black);
+                transition: all .4s ease-in-out;
+                @include media-only ("xs", min) {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                @include media-only ("md", min) {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+        p {
+            color: $font-body;
+            margin-bottom: 10px;
+        }
+        .post-btn {
+            a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                color: #145AFF;
+                transition: all .4s ease-in-out;
+                position: relative;
+                &:hover {
+                    color: var(--color-purple);
+                    &::before {
+                        opacity: 1;
+                        text-indent: 65px;
+                        color: #145AFF;
+                    }
+                }
+                &::before {
+                    content: "\f061";
+                    font-family: FontAwesome;
+                    font-size: 15px;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    right: 0;
+                    top: 0;
+                    opacity: 0;
+                    height: 100%;
+                    width: 40px;
+                    transition: all 0.2s linear 0s;
+                }
+            }
+        }
+    }
+}
+
+.ayo-portfolio-box-3 {
+    margin-bottom: 30px;
+    &:hover {
+        .item-img {
+            a {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .item-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        a {
+            width: 100%;
+            img {
+                transition: all .4s ease;
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    .content {
+        padding: 20px;
+        position: relative;
+        &::after {
+            content: "";
+            height: 100%;
+            width: 2px;
+            background: #145AFF;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            transition: all .4s ease-in-out;
+            @include media-only ("lg", min) {
+                height: 120px;
+            }
+        }
+        .title {
+            margin-bottom: 0px;
+            a {
+                font-size: 20px;
+                line-height: 38px;
+                color: var(--color-black);
+                transition: all .4s ease-in-out;
+                @include media-only ("xs", min) {
+                    font-size: 24px;
+                }
+                @include media-only ("lg", min) {
+                    font-size: 30px;
+                }
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+        p {
+            color: $font-body;
+            margin-bottom: 10px;
+        }
+        .post-btn {
+            a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                color: #145AFF;
+                transition: all .4s ease-in-out;
+                position: relative;
+                &:hover {
+                    color: var(--color-purple);
+                    &::before {
+                        opacity: 1;
+                        text-indent: 65px;
+                        color: #145AFF;
+                    }
+                }
+                &::before {
+                    content: "\f061";
+                    font-family: FontAwesome;
+                    font-size: 15px;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    right: 0;
+                    top: 0;
+                    opacity: 0;
+                    height: 100%;
+                    width: 40px;
+                    transition: all 0.2s linear 0s;
+                }
+            }
+        }
+    }
+}
+
+
+.rt-portfolio-default {
+    position: relative;
+    margin-bottom: 24px;
+    .portfolio-1 {
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            &:hover {
+                .portfolio-content {
+                    opacity: 1;
+                }
+            }
+            .item-img {
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                a {
+                    width: 100%;
+                    img {
+                        border-radius: 10px;
+                        width: 100%;
+                    }
+                    .tooltipLink {
+                        position: relative;
+                    }
+                }
+            }
+            .portfolio-content {
+                position: absolute;
+                width: max-content;
+                left: 40px;
+                right: auto;
+                bottom: 40px;
+                top: auto;
+                overflow: hidden;
+                padding: 0;
+                opacity: 0;
+                will-change: scroll-position;
+                transition: unset;
+                .content-info {
+                    background: #FFFFFF;
+                    border-radius: 5px;
+                    padding: 15px 30px;
+                    max-width: 323px;
+                    position: relative;
+                    .entry-title {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 28px;
+                        margin-bottom: 0;
+                        @include media-only ("sm", min) {
+                            font-size: 22px;
+                            line-height: 32px;
+                        }
+                    }
+                    .portfolio-cat {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #145AFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.portfolio-metro-wrapper {
+    margin-bottom: 24px;
+    .item-img {
+        a {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.ayo-single-portfolio-wrap {
+    background: $color-gray;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.ayo-single-portfolio-wrapper-box {
+    position: relative;
+    @include media-only (320px, min) {
+        padding-top: 100px;
+    }
+    @include media-only ("xs", min) {
+        padding-top: 140px;
+    }
+
+    @include media-only ("md", min) {
+        padding-top: 230px;
+    }
+    .blur-shape-area {
+        display: none;
+        @include media-only ("lg", min) {
+            display: block;
+        }
+        ul {
+            li {
+                position: absolute;
+                width: 395px;
+                height: 395px;
+                border-radius: 50%;
+                filter: blur(250px);
+                &:nth-child(1) {
+                    background: #FFBA7A;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+                &:nth-child(2) {
+                    background: #B18CFF;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+.single-portfolio-img {
+    margin-bottom: 10px;
+    img {
+        border-radius: 10px;
+    }
+}
+
+.single-portfolio-content {
+    margin-top: 20px;
+    @include media-only ("md", min) {
+        margin-top: 0;
+        position: sticky;
+        top: 100px;
+        transition: all 200ms linear;
+        margin-top: 20px;
+        animation-name: fadeInDown;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-delay: 0s;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 15px;
+        @include media-only ("xs", min) {
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    .meta-wrap {
+        margin-bottom: 40px;
+        .item-meta {
+            span {
+                font-family: $font-title;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 30px;
+                color: $color-black;
+            }
+        }
+    }
+}
+
+.ayo-portfolio-navigation-area {
+    padding-top: 80px;
+    .prev-btn,.next-btn {
+        a {
+            font-family: $font-title;
+            font-size: 18px;
+            line-height: 22px;
+            color: $color-black;
+            display: inline-block;
+            font-weight: 500;
+            transition: all .4s ease-in-out;
+            &:hover {
+                color: $color-primary;
+                i {
+                    transform: translateX(-5px);
+                    color: $color-primary;
+                }
+            }
+            i {
+                transition: all .4s ease-in-out;
+                color: $color-black;
+            }
+        }
+
+    }
+    .prev-btn {
+        margin-bottom: 20px;
+        @include media-only ("xs", min) {
+            text-align: left;
+            margin-bottom: 0;
+        }
+        a {
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+    .next-btn {
+        text-align: left;
+        @include media-only ("xs", min) {
+            text-align: right;
+        }
+        a {
+            &:hover {
+                color: $color-primary;
+                i {
+                    transform: translateX(5px);
+                    color: $color-primary;
+                }
+            }
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}

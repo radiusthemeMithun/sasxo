@@ -1,0 +1,113 @@
+.ayo-audio-wrap {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 24px;
+    @include media-only ("xs", min) {
+       padding: 60px 74px 40px 30px;
+    }
+    .content {
+        .subtitle {
+            font-family: $font-title;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 45px;
+            color: #969696;
+            @include media-only ("xs", min) {
+                font-size: 20px;
+            }
+        }
+        .title {
+            font-weight: 500;
+            font-size: 20px;
+            @include media-only ("xs", min) {
+                font-size: 24px;
+            }
+            @include media-only ("lg", min) {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.audioplayer {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 13px;
+    .audioplayer-playpause {
+        width: 45px;
+        height: 45px;
+    }
+}
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause {
+    background: rgba(91, 130, 255, 0);
+    border: 1px solid #d3d3d3;
+    &:hover {
+        background: $color-primary;
+        border-color: $color-primary;
+        a {
+            border-left: 12px solid $color-white;
+        }
+    }
+}
+
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
+    border-left: 12px solid $color-black;
+    transition: all .2s ease-in-out;
+}
+
+.audioplayer-time {
+    font-size: 15px;
+    color: #989898;
+    font-family: $font-title;
+}
+.audioplayer-time-current {
+    margin-left: 10px;
+}
+
+.audioplayer-bar {
+    margin: 0 10px;
+    height: 12px;
+    .audioplayer-bar-loaded {
+        z-index: 1;
+        height: 4px;
+        background: #D9D9D9;
+        border-radius: 5px;
+    }
+    .audioplayer-bar-played {
+        height: 4px;
+        background: $color-primary;
+        border-radius: 5px;
+        &::after {
+            display: none;
+        }
+    }
+}
+.audioplayer-time-duration {
+    margin-right: 10px;
+}
+.audioplayer-volume {
+    display: flex;
+    align-items: center;
+    .audioplayer-volume-adjust {
+        margin-left: 0;
+    } 
+    .audioplayer-volume-adjust > div {
+        width: 74px;
+        height: 4px;
+        background-color: #d9d9d9;
+        border-radius: 20px;
+    }
+    .audioplayer-volume-adjust div div {
+        height: 4px;
+        background-color: $color-primary;
+        border-radius: 20px;
+    }
+}
+

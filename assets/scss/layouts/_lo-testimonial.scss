@@ -1,0 +1,38 @@
+
+/**
+ * Layout - Testimonial.
+ */
+
+.testimonial-img-wrap {
+    position: relative;
+    z-index: 1;
+    display: none;
+    @include media-only ("lg", min) {
+       display: block;
+    }
+    .item-img {
+        position: relative;
+        bottom: -63px;
+        img {
+            height: 774px;
+            object-fit: cover;
+        }
+    }
+    .shape {
+        li {
+            position: absolute;
+            &:nth-child(1) {
+                bottom: 4px;
+                left: -22px;
+                z-index: -1;
+            }
+            &:nth-child(2) {
+                bottom: 5px;
+                right: -24px;
+                z-index: -2;
+            }
+        }
+    }
+}
+
+

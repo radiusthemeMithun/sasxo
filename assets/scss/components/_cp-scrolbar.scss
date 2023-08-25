@@ -1,0 +1,30 @@
+.rt-scrollbar {
+    overflow-y: scroll;
+    height: 380px;
+    padding-right: 30px;
+}
+@media (min-width: 1200px) {
+    .rt-scrollbar {
+        padding-right: 60px;
+    }
+}
+.rt-scrollbar::-scrollbar {
+    width: 2px;
+}
+.rt-scrollbar::-scrollbar-track {
+    box-shadow: inset 0 0 5px #2e3240;
+    border-radius: 10px;
+}
+.rt-scrollbar::-scrollbar-thumb {
+    background: $color-primary;
+    border-radius: 15px;
+}
+.rt-scrollbar::-webkit-scrollbar {
+    width: 2px;
+}
+.rt-scrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px #c0c0c0;
+}
+.rt-scrollbar::-webkit-scrollbar-thumb {
+    background: $color-primary;
+}

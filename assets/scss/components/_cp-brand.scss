@@ -1,0 +1,66 @@
+.brand-wrapper {
+    &:hover {
+        .item-img {
+            img {
+                filter: grayscale(0);
+                opacity: 1;
+            }
+        }
+    }
+    .item-img {
+        img {
+            filter: grayscale(100%);
+            opacity: .3;
+            transition: all .4s ease-in-out;
+        }
+    }
+}
+
+
+.ayo-brand-box.style-2 {
+    .brand-wrapper {
+        &:hover {
+            .item-img {
+                img {
+                    filter: grayscale(100%);
+                    opacity: .3;
+                }
+            }
+        }
+        .item-img {
+            img {
+                filter: grayscale(0);
+                opacity: 1;
+                transition: all .4s ease-in-out;
+            }
+        }
+    }
+}
+.ayo-brand-box.style-3 {
+    background: $color-primary;
+    border-radius: 30px;
+    padding: 30px;
+    @include media-only ("xs", min) {
+        border-radius: 50px;
+        padding: 40px;
+    }
+    @include media-only ("md", min) {
+        border-radius: 290px;
+        padding: 70px;
+    }
+    .brand-wrapper {
+        &:hover {
+            .item-img {
+                img {
+                    filter: grayscale(100%);
+                    opacity: .3;
+                }
+            }
+        }
+        .item-img {
+            svg {
+                color: $color-white;
+            }
+        }
+    }
+}

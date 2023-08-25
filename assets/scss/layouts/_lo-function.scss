@@ -1,0 +1,16 @@
+
+/**
+ * Layout - Function.
+ */
+
+.ayo-function-wrap {
+    background: #0D0B0B;
+    padding-top: 210px;
+}
+
+.ayo-function-wrap-2 {
+   background: $color-gray;
+    @include media-only ("lg", min) {
+        padding-top: 0px;
+    }
+}

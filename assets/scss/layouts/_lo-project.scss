@@ -1,0 +1,39 @@
+
+/**
+ * Layout - Project.
+ */
+
+.ayo-project-wrap {
+    background: #070623;
+    overflow: hidden;
+    .section-heading {
+        text-align: center;
+        .subtitle {
+            color: #ADADAD;
+        }
+        .heading-title {
+            color: var(--color-white);
+        }
+    }
+}
+
+.ayo-project-slider {
+    @include media-only ("lg", min) {
+        margin-right: -360px;
+        margin-left: -360px;
+    }
+}
+
+
+.ayo-project-process-wrap {
+    padding-bottom: 0;
+    padding-top: 140px;
+    .section-heading {
+        @include media-only ("lg", min) {
+            width: 406px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+    }
+}

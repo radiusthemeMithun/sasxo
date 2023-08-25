@@ -1,0 +1,30 @@
+.more-info-table.style-1 {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
+.more-info-table.style-1 .table {
+    margin-bottom: 0;
+}
+.more-info-table.style-1 .table > tbody > tr {
+    height: 50px;
+    vertical-align: middle;
+}
+.more-info-table.style-1 .table .item-1 {
+    position: relative;
+    margin: 0 25px;
+    color: #111111;
+    font-weight: 500;
+}
+.more-info-table.style-1 .table .item-1 span {
+    color: #444;
+    font-weight: 400;
+}
+// .more-info-table.style-1 .table-striped > tbody > tr:nth-of-type(odd) {
+//     background-color: #fff;
+//     --bs-table-accent-bg: #fff;
+// }
+// .more-info-table.style-1 .table-striped > tbody > tr:nth-of-type(even) {
+//     background-color: #f8f8f8;
+// }

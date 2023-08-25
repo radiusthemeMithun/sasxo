@@ -1,0 +1,84 @@
+/**
+ * Layout - Faq.
+ */
+
+.ayo-faq-wrap {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: var(--color-gray);
+}
+
+.ayo-faq-layout {
+    @include media-only ("lg", min) {
+        padding-left: 90px;
+    }
+}
+
+.ayo-faq-description {
+    margin-bottom: 24px;
+    @include media-only ("md", min) {
+        margin-bottom: 0px;
+    }
+    .section-heading {
+        margin-bottom: 30px;
+    }
+}
+
+.faq-img-wrapper {
+    padding-right: 0px;
+    margin-bottom: 24px;
+    @include media-only ("md", min) {
+        margin-bottom: 0;
+    }
+    @include media-only ("lg", min) {
+        padding-right: 76px;
+    }
+}
+
+.ayo-faq-wrap-2 {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.ayo-faq-wrap-5 {
+    background: $color-gray;
+    @include media-only ("lg", min) {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+}
+
+.ayo-faq-wrap-3 {
+    position: relative;
+    background: $color-gray;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.ayo-faq-layout.style-2 {
+    @media only screen and (min-width: 1200px) {
+        padding-left: 100px;
+    }
+}
+
+.faq-full-image {
+    position: relative;
+    z-index: 1;
+    img {
+        border-radius: 30px;
+        width: 100%;
+    }
+}
+
+.ayo-faq-wrap-4 {
+    background: $color-gray;
+    @include media-only ("lg", min) {
+        padding: 25px 0px 140px;
+    }
+}
+
+.ayo-faq-layout.style-3 {
+    @media only screen and (min-width: 1200px) {
+        padding-left: 0px;
+    }
+} 

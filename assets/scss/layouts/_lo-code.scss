@@ -1,0 +1,82 @@
+
+/**
+ * Layout - Code.
+ */
+
+.ayo-code-wrap {
+    background: linear-gradient(176.23deg, #100E0E 9.32%, #171717 96.91%);
+    padding-bottom: 110px;
+    .section-heading {
+        @media only screen and (min-width: 1200px) {
+            width: 557px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+        .heading-title {
+            color: var(--color-white);
+        }
+    }
+}
+
+.ayo-code-box-1 {
+    background: #0D0B0B;
+    border-radius: 20px;
+    padding: 30px 30px 40px 35px;
+    display: block;
+    margin-bottom: 30px;
+    @include media-only (376px, min) {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &:hover {
+        .icon {
+            img {
+                animation-name: ayoshake;
+                animation-timing-function: ease-in-out;
+                animation-duration: 0.4s;
+                animation-iteration-count: 1;
+            }
+        }
+    }
+    .icon {
+        img {
+            transition: all .3s ease-in-out;
+        }
+    }
+    .content {
+        flex: 1;
+        .title {
+            margin-bottom: 0;
+            line-height: 30px;
+            @include media-only ("xs", min) {
+                line-height: 55px;
+            }
+            a {
+                font-weight: 500;
+                font-size: 20px;
+                color: var(--color-white);
+                transition: all .4s ease-in-out;
+                @include media-only ("xs", min) {
+                    font-size: 22px;
+                }
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+        p {
+            color: #a6a6a6;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.ayo-code-img {
+    animation: move 7s infinite linear; 
+    display: none;
+    @include media-only ("md", min) {
+        display: block;
+    }
+}

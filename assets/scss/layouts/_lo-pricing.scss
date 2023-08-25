@@ -1,0 +1,40 @@
+/**
+ * Layout - Pricing.
+ */
+
+.ayo-pricing-wrap {
+    overflow: hidden;
+    padding-top: 120px;
+    @media only screen and (max-width: 1199px) {
+        padding-bottom: 80px;
+    }
+    @media only screen and (max-width: 991px) {
+        padding-bottom: 50px;
+    }
+    .section-heading {
+        text-align: center;
+        margin-bottom: 35px;
+        @media only screen and (min-width: 1200px) {
+            width: 490px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .heading-title {
+            margin-bottom: 5px;
+        }
+        p {
+            color: var(--color-para);
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.ayo-pricing-wrap-2 {
+    background: #0D0B0B;
+    padding: 140px 0px 50px 0px;
+}
+
+.ayo-pricing-wrap-2.style-2 {
+    padding: 140px 0px;
+}

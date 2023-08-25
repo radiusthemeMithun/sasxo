@@ -1,0 +1,91 @@
+.accordion {
+    .accordion-item {
+        border: 0;
+        margin-bottom: 10px;
+        background-color: transparent;
+        .accordion-header {
+            .accordion-button {
+                display: block;
+                width: 100%;
+                text-align: left;
+                position: relative;
+                box-shadow: none;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 25px;
+                text-transform: capitalize;
+                font-family: var(--font-title);
+                transition: all .3s ease-in-out;
+                background-color: transparent;
+                color: var(--color-black);
+                border: 1px solid #C0C0C0;
+                border-radius: 5px 5px 0px 0px;
+                padding: 22px 30px 21px 30px;
+                .accr-plus, 
+                .accr-minus {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    color: var(--color-primary);
+                    position: absolute;
+                    right: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: all 0.3s ease;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 0;
+                    &::before {
+                        width: auto;
+                        margin: 0;
+                    }
+                    @media only screen and (max-width: 479px) {
+                        right: 15px;
+                    }
+                }
+                .accr-plus {
+                    display: none;
+                }
+                &.collapsed {
+                    .accr-minus {
+                        display: none;
+                    }
+                
+                    .accr-plus {
+                        display: flex;
+                        color: var(--color-black);
+                    }
+                }
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+            .accordion-button.collapsed {
+                background: transparent;
+                color: var(--color-black);
+                border: 1px solid #C0C0C0;
+                border-radius: 5px 5px;
+            }
+        }
+        .accordion-body {
+            background: transparent;
+            padding: 30px 40px 20px 30px;
+            border: 1px solid #C0C0C0;
+            border-radius: 0px 0px 5px 5px;
+            border-top: 0;
+            margin-top: -5px;
+            overflow: hidden;
+            @media only screen and (max-width: 479px) {
+                padding: 30px;
+            }
+            .description {
+                margin-bottom: 0px;
+                @media only screen and (max-width: 479px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

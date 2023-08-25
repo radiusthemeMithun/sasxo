@@ -1,0 +1,79 @@
+/**
+ * Layout - Brand.
+ */
+
+.ayo-brand-wrap {
+    background-color: var(--color-gray);
+    padding-top: 90px;
+}
+
+
+.ayo-brand-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include media-only ("md", min) {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .brand-wrapper {
+        flex: 0 0 50%;
+        width: 50%;
+        margin-bottom: 30px;
+        @include media-only ("md", min) {
+            width: 100%;
+            flex: 1;
+            margin-bottom: 0;
+        }
+        .item-img {
+            text-align: center;
+            @include media-only ("md", min) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.ayo-brand-wrap.style-2 {
+    background: #0D0B0B;
+}
+.ayo-brand-wrap.style-3 {
+   padding-bottom: 140px;
+   padding-top: 0;
+}
+.ayo-brand-wrap.style-4 {
+    background: $color-white;
+}
+.ayo-brand-wrap.style-5 {
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    padding: 60px 0px;
+    @include media-only ("sm", min) {
+        padding: 80px 0px;
+    }
+    @include media-only ("md", min) {
+        padding: 100px 0px;
+    }
+    @include media-only ("lg", min) {
+        transform: translateY(125px);
+        padding: 0;
+    }
+}
+.ayo-brand-wrap.style-6 {
+    background: #386FFB;
+    @include media-only ("lg", min) {
+        padding-top: 180px;
+        padding-bottom: 0;
+    }
+    .text {
+        font-family: $font-title;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 55px;
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 25px;
+    }
+}

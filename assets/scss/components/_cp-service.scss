@@ -1,0 +1,579 @@
+
+.ayo-service-box-2 {
+    background: $color-gray;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 60px;
+    @include media-only ("xs", min) {
+        padding: 60px;
+    }
+    &:hover {
+        .item-icon {
+            svg {
+                animation-name: ayoshake;
+                animation-timing-function: ease-in-out;
+                animation-duration: 0.4s;
+                animation-iteration-count: 1;
+            }
+        }
+    }
+    .item-icon {
+        height: 90px;
+        width: 90px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #F7F8FF;
+        svg {
+            color: #6574FC;
+            transition: all .3s ease-in-out;
+        }
+    }
+    .content {
+        .title {
+            a {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: $color-black;
+                transition: all .3s ease-in-out;
+                @include media-only ("xs", min) {
+                    font-size: 24px;
+                }
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+        .service-btn {
+            a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                display: inline-block;
+                color: #98979D;
+                transition: all .4s ease-out;
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+.ayo-service-box-2.style-2 {
+    .item-icon {
+        background: #FFF4F5;
+        svg {
+            color: #FA4852;
+        }
+    }
+}
+.ayo-service-box-2.style-3 {
+    .item-icon {
+        background: #EFFFFC;
+        svg {
+            color: #28CCAE;
+        }
+    }
+}
+
+.ayo-service-box-3 {
+    border: 1px solid #C2C2C2;
+    border-radius: 20px;
+    padding: 45px 0px 50px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 24px;
+    @include media-only ("lg",min) {
+        margin-bottom: 0;
+    }
+    &:hover {
+        border-color: $color-primary;
+        &::after {
+            transform: translateY(0);
+        }
+        .shape-icon {
+            svg {
+                color: $color-white;
+                animation-name: ayoshake;
+                animation-timing-function: ease-in-out;
+                animation-duration: 0.4s;
+                animation-iteration-count: 1;
+            }
+        }
+        .content {
+            .title {
+                a {
+                    color: $color-white;
+                }
+            }
+            p {
+                color: $color-white;
+            }
+            .icon-btn {
+                a {
+                    background: $color-white;
+                }
+            }
+        }
+    }
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: $color-primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 20px;
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+    }
+    .shape-icon {
+        margin-bottom: 8px;
+        svg {
+            color: $color-primary;
+        }
+    }
+   .content {
+        .title {
+            a {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                transition: all .4s ease-out;
+                color: $color-black;
+                transition: all 0.3s ease-in-out;
+                @include media-only ("xs",min) {
+                    font-size: 24px;
+                }
+            }
+        }
+        p {
+            margin-bottom: 30px;
+            transition: all 0.3s ease-in-out;
+        }
+        .icon-btn {
+            a {
+                background: rgba(113, 90, 255, 0.05);
+                border-radius: 20px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 45px;
+                height: 35px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    i {
+                        animation: toRightFromLeft 0.5s forwards;
+                    }
+                }
+                i {
+                    color: $color-primary;
+                    transition: all .4s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+
+.ayo-service-box-4 {
+    background: $color-white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    @include media-only ("lg", min) {
+        padding: 40px 20px;
+    }
+    .shape-element {
+        margin-top: -41px;
+        width: 100%;
+        margin-left: -20px;
+        svg {
+            color: #F6F7FF;
+        }
+        @include media-only ("lg", max) {
+            display: none;
+        }
+    }
+    
+    .shape-botom-element {
+        margin-bottom: -41px;
+        width: 100%;
+        margin-left: -20px;
+        svg {
+            color: #F6F7FF;
+        }
+        @include media-only ("lg", max) {
+            display: none;
+        }
+    }
+    
+    &:hover {
+        &::before {
+            transform: scale(1, 1);
+            transform-origin: top center;
+            transition: transform 0.4s ease;
+        }
+        .item-shape {
+            svg {
+                color: $color-white;
+                animation-name: ayoshake;
+                animation-timing-function: ease-in-out;
+                animation-duration: 0.4s;
+                animation-iteration-count: 1;
+            }
+        }
+        .content {
+            .title {
+                a {
+                    color: $color-white;
+                }
+            }
+            p {
+                color: $color-white;
+            }
+            .shape-btn {
+                a {
+                    background: $color-white;
+                    i {
+                        color: #7616F0;
+                    }
+                }
+            }
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0px;
+        right: 0;
+        background-color: #7616F0;
+        transition: transform 0.4s ease;
+        transform-origin: bottom right;
+        transform: scale(1, 0);
+        z-index: -1;
+    }
+    .item-shape {
+        margin-bottom: 10px;
+        margin-top: 45px;
+        svg {
+            color: #7616F0;
+        }
+    }
+    .content {
+        .title {
+            line-height: 31px;
+            margin-bottom: 15px;
+            a {
+                font-weight: 700;
+                font-size: 20px;
+                color: $color-black;
+                transition: all .3s ease-in-out;
+                @include media-only ("xs", min) {
+                    font-size: 24px;
+                }
+            }
+        }
+        p {
+            margin-bottom: 20px;
+            transition: all .3s ease-in-out;
+            @include media-only ("lg", min) {
+                margin-bottom: 40px;
+            }
+        }
+        .shape-btn {
+            margin-bottom: 0px;
+            position: relative;
+            @include media-only ("lg", min) {
+                margin-bottom: -22px;
+            }
+            a {
+                height: 45px;
+                width: 45px;
+                justify-content: center;
+                display: inline-flex;
+                align-items: center;
+                border-radius: 50%;
+                background: #EDEDEE;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    i {
+                        animation: toRightFromLeft 0.5s forwards;
+                    }
+                }
+                i {
+                    color: $color-black;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+.ayo-service-box-4.style-2 {
+    &:hover {
+        .item-shape {
+            svg {
+                color: $color-white;
+            }
+        }
+        .content {
+            .shape-btn {
+                a {
+                    background: $color-white;
+                    i {
+                        color: #FF3F6D;
+                    }
+                }
+            }
+        }
+    }
+    &::before {
+        background: #FF3F6D;
+    }
+    .item-shape {
+        svg {
+            color: #FF3F6D;
+        }
+    }
+}
+.ayo-service-box-4.style-3 {
+    &:hover {
+        .item-shape {
+            svg {
+                color: $color-white;
+            }
+        }
+        .content {
+            .shape-btn {
+                a {
+                    background: $color-white;
+                    i {
+                        color: #227EF0;
+                    }
+                }
+            }
+        }
+    }
+    &::before {
+        background: #227EF0;
+    }
+    .item-shape {
+        svg {
+            color: #227EF0;  
+        }
+    }
+}
+
+.ayo-service-box-5 {
+    margin-bottom: 24px;
+    @include media-only ("md", min) {
+        position: sticky;
+        // top: 300px;
+        // transform: translateY(-15px);
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 200ms linear;
+        margin-bottom: 0;
+        margin-top: 140px;
+    }
+    @include media-only ("lg", min) {
+        margin-right: 50px;
+    }
+    .section-heading {
+        margin-bottom: 20px;
+        @include media-only ("md", min) {
+            margin-bottom: 50px;
+        }
+    }
+    .ayo-button-8 {
+        .ayo-btn-8 {
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.ayo-service-box-6 {
+    position: relative;
+    margin-bottom: 24px;
+    @include media-only ("lg", min) {
+        padding-left: 100px;
+        margin-bottom: 190px;
+    }
+    &:hover {
+        .item-img {
+            a {
+                img {
+                    transform: scale(1.1);
+                    filter: grayscale(100%);
+                }
+            }
+        }
+        .content-box {
+            .content {
+                .item-shape {
+                    img {
+                        animation-name: ayoshake;
+                        animation-timing-function: ease-in-out;
+                        animation-duration: 0.4s;
+                        animation-iteration-count: 1;
+                    }
+                }
+            }
+        }
+    }
+    .item-img {
+        border-radius: 20px 20px 0px 0px;
+        overflow: hidden;
+        @include media-only ("xs", min) {
+            border-radius: 20px;
+        }
+        a {
+            border-radius: 20px 20px 0px 0px;
+            width: 100%;
+            @include media-only ("xs", min) {
+                border-radius: 20px;
+            }
+            img {
+                border-radius: 20px 20px 0px 0px;
+                transition: all .6s ease;
+                filter: grayscale(0);
+                width: 100%;
+                @include media-only ("xs", min) {
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .content-box {
+        @include media-only ("xs", min) {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        @include media-only ("lg", min) {
+            position: absolute;
+            bottom: -120px;
+            right: -75px;
+        }
+        .content {
+            display: block;
+            gap: 20px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+            border-radius: 0px 0px 20px 20px;
+            padding: 30px;
+            width: 100%;
+            @include media-only ("xs", min) {
+                display: flex;
+                gap: 20px;
+                border-radius: 20px;
+            }
+            @include media-only ("lg", min) {
+                border-radius: 30px;
+                width: 526px;
+            }
+            .item-shape {
+                height: 80px;
+                width: 80px;
+                background: #9685FF;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                img {
+                    transition: all .2s ease-in-out;
+                }
+
+            }
+            .item-shape.style-2 {
+                background: #4286ED;
+            }
+            .item-shape.style-3 {
+                background: #7942ED;
+            }
+            .item-shape.style-4 {
+                background: #ED7542;
+            }
+            .item-shape.style-5 {
+                background: #E31FAC;
+            }
+            .item-title-box {
+                flex: 1;
+                .title {
+                    a {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 38px;
+                        transition: all .4s ease-in-out;
+                        color: $color-black;
+                        @include media-only ("xs", min) {
+                            font-size: 30px;
+                        }
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.ayo-service-inner-page {
+    .section-heading {
+        text-align: center;
+        @media only screen and (min-width: 1200px) {
+            width: 681px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    .service-inner-img {
+        text-align: center;
+    }
+}
+
+.ayo-service-inner-page-2 {
+    position: relative;
+    z-index: 1;
+    .title-area {
+        .subtitle {
+            color: $color-primary;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+        .heading-title {
+            font-weight: 500;
+            margin-bottom: 0;
+            font-size: 24px;
+		    line-height: 36px;
+            @include media-only ("xs", min) {
+                font-size: 30px;
+                line-height: 45px;
+            }
+            @include media-only ("lg", min) {
+                font-size: 40px;
+                line-height: 55px;
+            }
+        }
+    }
+}
+

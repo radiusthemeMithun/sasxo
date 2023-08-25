@@ -1,0 +1,53 @@
+/*======================================
+// Heading
+=====================================*/
+
+.section-heading {
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 1;
+	.subtitle {
+		font-family: var(--font-body);
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 22px;
+		text-transform: capitalize;
+		color: var(--color-primary);
+		display: inline-block;
+		margin-bottom: 12px;
+		position: relative;
+		@include media-only ("sm", min) {
+			font-size: 19px;
+			line-height: 25px;
+		}
+	}
+	.subtitle.style-2 {
+		line-height: 23px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+	.subtitle.style-3 {
+		color: #929292;
+		line-height: 23px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+  	.heading-title {
+		font-family: var(--font-title);
+		margin-bottom: 15px;
+		color: var(--color-black);
+		position: relative;
+		font-weight: 500;
+		text-transform: capitalize;
+		font-size: 24px;
+		line-height: 36px;
+		@include media-only ("xs", min) {
+			font-size: 30px;
+			line-height: 42px;
+		}
+		@include media-only ("lg", min) {
+			font-size: 36px;
+			line-height: 48px;
+		}
+  	}
+}

@@ -1,0 +1,458 @@
+
+/**
+ * Layout - Newsletter.
+ */
+
+
+.ayo-newsletter-wrap {
+    background-color: var(--color-gray);
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+    @include media-only ("lg", min) {
+        padding-bottom: 0px;
+        margin-bottom: 24px;
+    }
+}
+.ayo-newsletter-layout {
+    @include media-only ("lg", min) {
+        position: relative;
+        z-index: 1;
+    }
+    .ayo-newsletter-box {
+        background: #FFFFFF;
+        border-radius: var(--border-radius-lg);
+        padding: 30px;
+        margin-bottom: 24px;
+        @include media-only ("xs", min) {
+            padding: 50px;
+        }
+        @include media-only ("md", min) {
+            padding: 50px 55px 18px;
+        }
+        @include media-only ("lg", min) {
+            margin-bottom: 0;
+        }
+        .section-heading {
+            margin-bottom: 30px;
+            @include media-only ("lg", min) {
+               margin-bottom: 50px;
+            }
+            .subtitle {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 0px;
+            }
+            .heading-title {
+                margin-bottom: 0;
+                @include media-only ("lg", min) {
+                    padding-right: 40px;
+                    font-size: 40px;
+                }
+                .change {
+                    color: var(--color-primary);
+                    position: relative;
+                    text-decoration-line: underline;
+                    margin-bottom: 0;
+                    text-transform: lowercase;
+                }
+            }
+        }
+        .label {
+            font-family: var(--font-title);
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            color: #888787;
+            margin-top: 10px;
+            .sign {
+                a {
+                    color: var(--color-black);
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+        .input-group {
+            .btn-outline-secondary {
+                overflow: hidden;
+                &:hover {
+                    img {
+                        animation: toRightFromLeft 0.5s forwards;
+                    }
+                }
+                img {
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+        }
+    }
+
+    
+    .newsletter-card {
+        background: #FFFFFF;
+        border-radius: 15px;
+        padding: 30px;
+        @include media-only ("xs", min) {
+            padding: 50px 50px 40px 50px;
+        }
+        .title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 20px;
+            @include media-only ("xs", min) {
+                font-size: 23px;
+                line-height: 30px;
+            }
+            @include media-only ("lg", min) {
+                padding-right: 40px;
+            }
+        }
+        .label {
+            font-size: 15px;
+            line-height: 20px;
+            color: #7C7C7C;
+        }
+        .phone {
+            font-family: var(--font-title);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--color-primary);
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: var(--color-black);
+            }
+        }
+        .support-area {
+            padding-top: 10px;
+            p {
+                margin-bottom: 0;
+            }
+            .support-link {
+                color: var(--color-black);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                transition: all .3s ease-in-out;
+                text-transform: lowercase;
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+.ayo-newsletter-wrap-2 {
+    padding-bottom: 120px;
+}
+
+.ayo-newsletter-wrap-2.style-2 {
+    background: $color-gray;
+    padding-top: 0;
+}
+
+.ayo-newsletter-box-2 {
+    text-align: center;
+    background: #F5F6FF;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @include media-only ("lg", min) {
+        padding: 90px 0px 90px 0px;
+    }
+    .title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        @include media-only ("xs", min) {
+			font-size: 30px;
+			line-height: 42px;
+		}
+		@include media-only ("md", min) {
+			font-size: 36px;
+			line-height: 48px;
+		}
+        @include media-only ("lg", min) {
+            width: 665px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 40px;
+            line-height: 55px;
+        }
+        .line {
+            color: var(--color-primary);
+            text-decoration-line: underline;
+        }
+    }
+    p {
+        color: var(--color-black);
+        font-size: 16px;
+        margin-bottom: 30px;
+        @include media-only ("xs", min) {
+			font-size: 18px;
+		}
+    }
+    .input-group {
+        position: relative;
+        z-index: 1;
+        display: block;
+        @include media-only ("xs", min) {
+			display: flex;
+		}
+        @include media-only ("lg", min) {
+            width: 595px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .form-control {
+            background: #fff;
+            border: 1px solid var(--color-black);
+            border-radius: 50px !important;
+            height: 60px;
+            font-size: 16px;
+            line-height: 28px;
+            color: var(--color-primary);
+            padding: 0px 0px 0px 20px;
+            margin-right: 15px;
+            width: 100%;
+            @include media-only ("xs", min) {
+                width: auto;
+            }
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+            &::placeholder {
+                color: #9E9E9E;
+            }
+        }
+        .btn-outline-secondary {
+            border: 0;
+            background: var(--color-primary);
+            border-radius: 50px !important;
+            display: inline-block;
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            color: var(--color-white);
+            padding: 10px 30px;
+            width: auto;
+            height: 60px;
+            overflow: hidden;
+            transition: all .4s ease-in-out;
+            position: initial;
+            &:hover {
+                background: #03319E;
+            }
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+    }
+    .shape-list {
+        display: none;
+        @include media-only ("lg", min) {
+            display: block;
+        }
+        li {
+            position: absolute;
+            &:nth-child(1) {
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+            }
+            &:nth-child(2) {
+                top: 65px;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.ayo-newsletter-wrap-3 {
+    @include media-only ("md", max) {
+        margin-top: -120px;
+    }
+    @include media-only ("lg", max) {
+        padding-bottom: 100px;
+    }
+    .ayo-newsletter-layout {
+        background: #6230F0;
+        border-radius: 30px;
+        padding: 40px;
+        @include media-only ("lg", min) {
+            margin-bottom: -140px;
+            transform: rotate(-1deg);
+            padding: 80px 45px 50px;
+        }
+        .newsletter-content {
+            .title {
+                color: var(--color-white);
+                font-size: 24px;
+                line-height: 36px;
+                @include media-only ("xs", min) {
+                    font-size: 30px;
+                    line-height: 42px;
+                }
+                @include media-only ("lg", min) {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+            }
+            p {
+                color: var(--color-white);
+            }
+        }
+        .feature-button-list {
+            ul {
+                @include media-only ("xs", min) {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    justify-content: flex-start;
+                }
+                @include media-only ("md", min) {
+                    justify-content: flex-end;
+                }
+                li {
+                    .about-btn {
+                        border: 1px solid var(--color-white);
+                        border-radius: 50px;
+                        background-color: transparent;
+                        padding: 8px 30px;
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        transition: all .4s ease-in-out; 
+                        position: relative;
+                        margin-bottom: 15px;
+                        @include media-only ("xs", min) {
+                            margin-bottom: 0;
+                        }
+                        &:hover {
+                            background-color: var(--color-white);
+                            border-color: var(--color-white);
+                            &::before {
+                                &::before {
+                                    height: 0;
+                                }
+                            }
+                            .brand {
+                                i {
+                                    color: #000;
+                                }
+                            }
+                            .content {
+                                .label {
+                                    color: #5C5C5C;
+                                }
+                                .text {
+                                    color: #000;
+                                }
+                            }
+                        }
+                        .brand {
+                            i {
+                                color: var(--color-white);
+                                font-size: 30px;
+                                transition: all .4s ease-in-out; 
+                            }
+                            .fa-apple {
+                                font-size: 40px;
+                            }
+                        }
+                        .content {
+                            .label {
+                                font-size: 15px;
+                                line-height: 20px;
+                                color: #EDEDED;
+                                transition: all .4s ease-in-out; 
+                            }
+                            .text {
+                                font-family: var(--font-title);
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: var(--color-white);
+                                transition: all .4s ease-in-out; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.ayo-newsletter-wrap-4 {
+    padding-bottom: 60px;
+    @include media-only ("sm", min) {
+        padding-bottom: 80px;
+    }
+    @include media-only ("md", min) {
+        padding-bottom: 100px;
+    }
+    @include media-only ("lg", min) {
+        padding-bottom: 0px;
+    }
+}
+
+.ayo-newsletter-box-3 {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    border: 5px solid #6230F0;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 40px;
+    @include media-only ("sm", min) {
+        border-radius: 170px;
+        padding: 60px 75px 45px 75px;
+    }
+    @include media-only ("lg", min) {
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+    .title {
+        font-weight: 500;
+        margin-bottom: 0;
+        font-size: 24px;
+		line-height: 36px;
+		@include media-only ("xs", min) {
+			font-size: 30px;
+			line-height: 42px;
+		}
+		@include media-only ("lg", min) {
+			font-size: 40px;
+            line-height: 55px;
+		}
+    }
+    .ayo-button {
+        text-align: right;
+    }
+    .ayo-button-6 {
+        margin-top: 24px;
+        @include media-only ("md", min) {
+			margin-top: 0;
+		}
+    }
+    .shape {
+        position: absolute;
+        top: -20px;
+        right: -15px;
+        z-index: -1;
+        display: none;
+        @include media-only ("lg", min) {
+            display: block;
+        }
+    }
+}
