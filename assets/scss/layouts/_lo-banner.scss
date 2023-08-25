@@ -4,7 +4,7 @@
 
 
 .ayo-hero-bannar-wrap {
-    background-color: var(--color-gray);
+    background-color: #FFFBF8;
     position: relative;
     overflow: hidden;
     @include media-only (320px, min) {
@@ -16,30 +16,6 @@
 
     @include media-only ("md", min) {
         padding-top: 230px;
-    }
-    .blur-shape-area {
-        ul {
-            li {
-                position: absolute;
-                width: 395px;
-                height: 395px;
-                border-radius: 50%;
-                filter: blur(250px);
-                &:nth-child(1) {
-                    background: #FFBA7A;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    left: 50px;
-                }
-                &:nth-child(2) {
-                    background: #B18CFF;
-                    position: absolute;
-                    top: 100px;
-                    right: 100px;
-                }
-            }
-        }
     }
 }
 .ayo-hero-bannar-wrap.style-2 {

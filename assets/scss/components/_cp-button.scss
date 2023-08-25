@@ -3,7 +3,7 @@
 =========================================================================*/
 .ayo-button {
 	.ayo-btn {
-		border-radius: 15px;
+		border-radius: 500px;
 		color: var(--color-white);
 		font-family: var(--font-body);
 		background-color: var(--color-primary);
@@ -25,7 +25,7 @@
 			content: "";
 			height: 300px;
 			width: 300px;
-			background-color: #D40F00;
+			background-color: #6336F8;
 			border-radius: 50%;
 			position: absolute;
 			top: 50%;
@@ -319,3 +319,155 @@
 		}
 	}
 }
+
+
+// .sc-button {
+// 	position: relative;
+// 	&:hover {
+// 		.sas-btn {
+// 			animation: animation_back_down .3s ease forwards;
+// 			color: $color-white;
+// 			background-color: $color-black;
+// 			.sc_button_icon {
+// 				left: 4px;
+// 				margin-left: 9px;
+// 				margin-right: -14px;
+// 				opacity: 1;
+// 			}
+// 			.sc_button_text {
+// 				margin-right: -13px;
+// 			}
+// 		}
+// 	}
+// 	.sas-btn {
+// 		color: $color-white;
+// 		background-color: $color-primary;
+// 		border-radius: 30px;
+// 		display: inline-block;
+// 		height: 51px;
+//     	max-width: 100%;
+// 		padding: 12px 30px;
+// 		text-align: center;
+// 		line-height: 24px;
+
+// 		.sc_button_icon {
+// 			position: relative;
+// 			left: -18px;
+// 			margin-right: -18px;
+// 			margin-left: 0;
+// 			opacity: 0;
+// 			transition: all ease .3s;
+// 			i {
+// 				color: $color-white;
+// 				font-size: 18px;
+// 			}
+// 		}
+// 		.sc_button_text {
+// 			transition: all ease .3s;
+// 			display: inline-block;
+// 			vertical-align: bottom;
+// 			white-space: normal;
+// 		}
+// 	}
+// }
+
+
+
+.sc_item_button {
+	a {
+		-webkit-appearance: none;
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 13px;
+		line-height: 19px;
+		font-weight: 500;
+	
+		box-sizing: border-box;
+		border-radius: 30px;
+		text-transform: uppercase;
+		white-space: nowrap;
+		letter-spacing: .12em;
+		height: 51px;
+		max-width: 100%;
+		border-width: 2px !important;
+		border-style: solid;
+		padding: 14px 43px 14px 44px;
+		animation: animation_back_down .3s ease forwards;
+		position: relative;
+		color: $color-white;
+		background-color: $color-primary;
+		border-color: $color-primary;
+		box-shadow: 0 5px 12px rgba(244,42,121, .1);
+		&:hover {
+			color: $color-white;
+			background-color: $color-black;
+			border-color: $color-black;
+			animation: animation_jump_up .3s ease forwards;
+			.sc_button_icon {
+				left: 4px;
+				margin-left: 9px;
+				margin-right: -14px;
+				opacity: 1;
+			}
+			.sc_button_text {
+				margin-left: -13px;
+			}
+		}
+
+		.sc_button_icon {
+			position: relative;
+			left: -18px;
+			margin-right: -18px;
+			margin-left: 0;
+			opacity: 0;
+			transition: all ease .3s;
+			float: none;
+			margin-top: 0;
+
+			font-size: 18px;
+			height: 19px;
+			line-height: 19px;
+			width: 19px;
+			text-align: left;
+
+			display: inline-block;
+			vertical-align: bottom;
+			white-space: normal;
+			text-decoration: inherit;
+
+			font-weight: 400;
+    		font-style: normal;
+		}
+		.sc_button_text {
+			transition: all ease .3s;
+			display: inline-block;
+			vertical-align: bottom;
+			white-space: normal;
+			text-decoration: inherit;
+			.sc_button_title {
+				color: $color-white;
+			}
+		}
+	}
+}
+
+
+@keyframes animation_back_down {
+	0% {
+		transform: translateY(-3px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes animation_jump_up {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-3px);
+	}
+}
+

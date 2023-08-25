@@ -197,31 +197,6 @@
    });
 
 
-  /*-------------------------------------
-    Menu Feed
-    -------------------------------------*/
-
-    $(document).ready(function() {
-      $(".menu__Feed__item").hover(
-          function() {
-              $(this).closest(".header__transition").addClass("box-hover");
-          },
-          function() {
-              $(this).closest(".header__transition").removeClass("box-hover");
-          }
-      );
-  });
-  $(document).ready(function() {
-      $(".menu__Feed__item").hover(
-          function() {
-              $(this).addClass("active");
-          },
-          function() {
-              $(this).removeClass("active");
-          }
-      );
-  });
-
 
   /*=====================================
   // Screenshot-slider
