@@ -37,17 +37,15 @@
 		margin-bottom: 15px;
 		color: var(--color-black);
 		position: relative;
-		font-weight: 500;
 		text-transform: capitalize;
-		font-size: 24px;
-		line-height: 36px;
+		font-weight: 700;
 		@include media-only ("xs", min) {
 			font-size: 30px;
-			line-height: 42px;
+			line-height: 40px;
 		}
 		@include media-only ("lg", min) {
-			font-size: 36px;
-			line-height: 48px;
+			font-size: 40px;
+			line-height: 50px; 
 		}
   	}
 }
