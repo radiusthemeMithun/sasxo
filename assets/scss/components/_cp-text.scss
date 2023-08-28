@@ -1,0 +1,32 @@
+.text-box {
+    .heading-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 25px;
+    }
+    .about-list {
+        margin-bottom: 38px;
+        ul {
+            li {
+                font-weight: 500;
+                color: var(--color-black);
+                font-size: 18px;
+                line-height: 32px;
+                @include media-only ("xs", min) {
+                    font-size: 18px;
+                    line-height: 40px;
+                }
+                i {
+                    color: #00BD6F;
+                    font-size: 22px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

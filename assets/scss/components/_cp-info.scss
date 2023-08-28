@@ -1,0 +1,50 @@
+.info-box {
+    border-radius: 5px;
+    background-color: $color-white;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.04);
+    padding: 40px 35px;
+    .icon-shape {
+        height: 70px;
+        width: 70px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: #FFF4EB;
+        margin-bottom: 20px;
+        transition: all .4s ease-in-out;
+        svg {
+            color: #FF760E;
+            transition: all .4s ease-in-out;
+        }
+        &.style-2 {
+            background-color: #DEF1FC;
+            svg {
+                color: #0EA8FF;
+            }
+        }
+        &.style-3 {
+            background-color: #FFF3F9;
+            svg {
+                color: #FF0E82;
+            }
+        }
+        &.style-4 {
+            background-color: #EDFFF4;
+            svg {
+                color: #39DF7B;
+            }
+        }
+    }
+    .text {
+        font-size: 22px;
+        font-weight: 600;
+        > a {
+            color: $color-black;
+            transition: all .4s ease-in-out;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}

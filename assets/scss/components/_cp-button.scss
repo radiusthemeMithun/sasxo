@@ -73,6 +73,26 @@
 				color: $color-white;
 			}
 		}
+		&.style-2 {
+			background-color: #F7F4FF;
+			border-color: #F7F4FF;
+			color: $color-primary;
+			.button-text {
+				.title {
+					color: $color-primary;
+				}
+			}
+			&:hover {
+				color: $color-white;
+				background-color: $color-primary;
+				border-color: $color-primary;
+				.button-text {
+					.title {
+						color: $color-white;
+					}
+				}
+			}
+		}
 	}
 }
 
