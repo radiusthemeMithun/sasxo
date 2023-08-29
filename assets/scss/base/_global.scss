@@ -292,7 +292,7 @@ select {
 }
 
 .section-padding {
-    padding-block: 140px;
+    padding-block: 120px;
     @include breakpoint("lg") {
         padding: 80px 0;
     }

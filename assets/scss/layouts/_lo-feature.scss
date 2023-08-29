@@ -40,6 +40,17 @@
 }
 
 
+.feature-wrap-2 {
+    background-color: #FAF8FF;
+    padding-bottom: 0;
+    .section-heading {
+        @include media-only ("lg", min) {
+            margin-bottom: 150px;
+        }
+    }
+}
+
+
 
 
 

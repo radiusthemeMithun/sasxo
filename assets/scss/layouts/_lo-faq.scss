@@ -2,83 +2,51 @@
  * Layout - Faq.
  */
 
-.ayo-faq-wrap {
-    padding-top: 140px;
-    padding-bottom: 140px;
-    background-color: var(--color-gray);
-}
-
-.ayo-faq-layout {
+.faq-box-1 {
     @include media-only ("lg", min) {
-        padding-left: 90px;
+        margin-left: 30px;
     }
-}
+    .image-box {
+        .item-img {
+            > img {
 
-.ayo-faq-description {
-    margin-bottom: 24px;
-    @include media-only ("md", min) {
-        margin-bottom: 0px;
-    }
-    .section-heading {
-        margin-bottom: 30px;
-    }
-}
-
-.faq-img-wrapper {
-    padding-right: 0px;
-    margin-bottom: 24px;
-    @include media-only ("md", min) {
-        margin-bottom: 0;
-    }
-    @include media-only ("lg", min) {
-        padding-right: 76px;
-    }
-}
-
-.ayo-faq-wrap-2 {
-    position: relative;
-    padding-top: 140px;
-    padding-bottom: 140px;
-}
-.ayo-faq-wrap-5 {
-    background: $color-gray;
-    @include media-only ("lg", min) {
-        padding-top: 140px;
-        padding-bottom: 140px;
-    }
-}
-
-.ayo-faq-wrap-3 {
-    position: relative;
-    background: $color-gray;
-    padding-top: 140px;
-    padding-bottom: 140px;
-}
-
-.ayo-faq-layout.style-2 {
-    @media only screen and (min-width: 1200px) {
-        padding-left: 100px;
+                border-radius: 120px 0px 170px 170px;
+                @include media-only ("lg", min) {
+                    margin-bottom: 10px;
+                    margin-left: 100px;
+                }
+            }
+            .small-img {
+                position: inherit;
+                text-align: center;
+                img {
+                    border-radius: 50%;
+                    @include media-only ("lg", min) {
+                        margin-left: 100px;
+                    }
+                }
+            }
+            .element-shape {
+                ul {
+                    li {
+                        &:nth-child(1) {
+                            top: 90px;
+                            left: 0;
+                            img {
+                                border-radius: 0px 170px 170px 170px;
+                            }
+                        }
+                        &:nth-child(2) {
+                           top: 50%;
+                           right: 0;
+                           transform: translateY(-50%);
+                            img {
+                                border-radius: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
-.faq-full-image {
-    position: relative;
-    z-index: 1;
-    img {
-        border-radius: 30px;
-        width: 100%;
-    }
-}
-
-.ayo-faq-wrap-4 {
-    background: $color-gray;
-    @include media-only ("lg", min) {
-        padding: 25px 0px 140px;
-    }
-}
-
-.ayo-faq-layout.style-3 {
-    @media only screen and (min-width: 1200px) {
-        padding-left: 0px;
-    }
-} 

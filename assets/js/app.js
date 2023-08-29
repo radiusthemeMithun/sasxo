@@ -191,6 +191,17 @@
            }
          );
        });
+
+          // pie chart
+      $(".chart-bar.style-1").easyPieChart({
+        barColor: "#1A7DF0",
+        trackColor: "#DEE0E6",
+        scaleColor: false,
+        lineWidth: 10,
+        size: 110,
+        lineCap: "square",
+        animate: 2000,
+      });
  
        counter = false;
      }
