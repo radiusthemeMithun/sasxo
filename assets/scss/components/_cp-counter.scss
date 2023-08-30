@@ -1,3 +1,11 @@
+.counter-wrap {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 95px 0;
+}
+
+
+
 .counterUp {
     font-size: 30px;
     font-weight: 700;
@@ -8,5 +16,30 @@
         font-size: 20px;
         position: relative;
         font-weight: 300;
+    }
+    &.style-2 {
+        font-size: 40px;
+        color: $color-white;
+        font-family: $font-title;
+        font-weight: 400;
+        margin-bottom: 10px;
+        .post-fix {
+            font-size: 24px;
+            color: $color-white;
+            font-weight: 400;
+        }
+    }
+}
+
+.counter-box {
+    gap: 15px;
+}
+
+.sas-counter {
+    .label-1 {
+        font-size: 18px;
+        color: $color-white;
+        font-weight: 500;
+        line-height: normal;
     }
 }

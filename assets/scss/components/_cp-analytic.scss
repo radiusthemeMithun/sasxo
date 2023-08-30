@@ -1,0 +1,31 @@
+
+.analytics-wrap {
+    background-color: $color-primary;
+}
+
+.analytics-box {
+    .text-box {
+        .heading-title{
+            color: $color-white;
+        }
+        p {
+            color: $color-white;
+            font-size: 24px;
+        }
+        .about-list {
+            ul {
+                li {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.analytics-box-2 {
+    .item-img {
+        border-radius: 20px;
+        background-color: #FFF;
+        padding: 30px;
+    }
+}

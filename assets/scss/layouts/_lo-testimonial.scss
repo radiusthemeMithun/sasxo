@@ -3,33 +3,27 @@
  * Layout - Testimonial.
  */
 
-.testimonial-img-wrap {
+ .testimonial-wrap {
     position: relative;
     z-index: 1;
-    display: none;
-    @include media-only ("lg", min) {
-       display: block;
-    }
-    .item-img {
+    padding: 120px 0 0 0;
+    .testimonial-slider-wrap {
         position: relative;
-        bottom: -63px;
-        img {
-            height: 774px;
-            object-fit: cover;
-        }
-    }
-    .shape {
-        li {
-            position: absolute;
-            &:nth-child(1) {
-                bottom: 4px;
-                left: -22px;
-                z-index: -1;
+        .swiper-pagination {
+           bottom: 90px;
+            .swiper-pagination-bullet {
+                height: 10px;
+                width: 10px;
+                background: #F0ECFA;
+                opacity: 1;
+                display: inline-block;
+                border-radius: 50%;
             }
-            &:nth-child(2) {
-                bottom: 5px;
-                right: -24px;
-                z-index: -2;
+            .swiper-pagination-bullet-active {
+                background: $color-primary;
+                width: 20px;
+                height: 10px;
+                border-radius: 20px;
             }
         }
     }

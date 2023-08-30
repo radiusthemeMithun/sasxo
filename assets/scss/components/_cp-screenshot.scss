@@ -1,11 +1,11 @@
-.ayo-screenshot-box {
+.screenshot-box {
     margin: 50px 0px 85px 0px;
     .item-img {
         border-radius: 20px;
-        border: 1px solid #d3d3d3;
+        background: #FFF;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
         img {
             border-radius: 20px;
-            padding: 8px;
             width: 100%;
         }
     }
