@@ -1,6 +1,21 @@
 
 .analytics-wrap {
     background-color: $color-primary;
+    z-index: 1;
+    .analytic-shape {
+        li {
+            position: absolute;
+            z-index: -1;
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+            }
+            &:nth-child(2) {
+                top: 0;
+                left: 0;
+            }
+        }
+    }
 }
 
 .analytics-box {

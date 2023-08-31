@@ -1,77 +1,67 @@
 /*======================================
 // Social
 =====================================*/
-
 .item-social {
+	.text {
+		color: #FFF;
+		font-size: 14px;
+		font-weight: 500;
+	}
 	ul {
-		display: flex;
-		align-items: center;
-		gap: 9px;
+		gap: 10px;
 		li {
-			.social {
+			a {
+				height: 40px;
+				width: 40px;
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
-				height: 40px;
-				width: 40px;
-				background: transparent;
-				border-radius: 50%;
-				transition: all .4s ease-out;
+				border-radius: 40px;
+				border: 1px solid #767A82;
+				transition: all .3s ease-out;
 				i {
-					color: #fff;
-					transition: all .3s ease-in-out;
+					color: #767A82;
+					font-size: 14px;
+					transition: all .3s ease-out;
 				}
-			}
-			.item-fb {
-				background: #E7F1FF;
-				i {
-					color: #1877F2;
-				}
-			}
-			.item-twit {
-				background: #E7F6FF;
-				i {
-					color: #1DA1F2;
-				}
-			}
-			.item-in {
-				background: #E1F5FF;
-				i {
-					color: #0077B5;
-				}
-			}
-			.item-pinta {
-				background: #FFEBEE;
-				i {
-					color: #E60023;
-				}
-			}
-			&:hover {
-				.item-fb {
-					background-color: #0165E1;
-					i {
-						color: #fff;
+				&.item-fb {
+					&:hover {
+						background-color:#1877F2;
+						border-color: #1877F2;
+						i {
+							color: $color-white;
+						}
 					}
 				}
-				.item-twit {
-					background-color: #1DA1F2;
-					i {
-						color: #fff;
+				&.item-twit {
+					&:hover {
+						background-color:#1DA1F2;
+						border-color: #1DA1F2;
+						i {
+							color: $color-white;
+						}
 					}
 				}
-				.item-in {
-					background-color: #0077B5;
-					i {
-						color: #fff;
+				&.item-In {
+					&:hover {
+						background-color:#0077B5;
+						border-color: #0077B5;
+						i {
+							color: $color-white;
+						}
 					}
 				}
-				.item-pinta {
-					background-color: #e60023;
-					i {
-						color: #fff;
+				&.item-insta {
+					&:hover {
+						background-color:#FD1D1D;
+						border-color: #FD1D1D;
+						i {
+							color: $color-white;
+						}
 					}
 				}
 			}
 		}
+		
 	}
 }
