@@ -1,5 +1,5 @@
 .banner-layout {
-    background-image: url(../../media/banner/banner-1.svg);
+    background-image: url(../../media/banner/banner-4.svg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 100px 0 120px;
@@ -29,6 +29,17 @@
                 bottom: 25px;
                 left: 35%;
             }
+        }
+    }
+    &.style-2 {
+        padding: 50px 80px 45px;
+        border-radius: 10px;
+        @include media-only ("lg", min) {
+            transform: translateY(110px);
+            margin-top: -110px;
+        }
+        .banner-text {
+            margin-bottom: 0;
         }
     }
 }

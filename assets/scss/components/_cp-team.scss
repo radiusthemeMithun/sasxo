@@ -1,271 +1,163 @@
-.ayo-team-box {
-    background: #F8F8FF;
-    border-radius: 20px;
-    position: relative;
-    margin-bottom: 200px;
-    @include media-only ("md", min) {
-        margin-bottom: 0;
-    }
+
+.team-box {
     &:hover {
         .item-img {
             a {
-                img {
-                    transform: scale(0.8);
-                    animation: pulse 3000ms infinite;
-                    border-color: var(--color-primary);
+                 img {
+                    filter: grayscale(100%);
+                    transform: scale(1.05);
                 }
             }
         }
     }
     .item-img {
-        text-align: center;
-        transform: translateY(-160px);
+        border-radius: 20px;
+        z-index: 1;
         a {
             img {
-                transition: all .3s ease-in-out;
-                border-radius: 50%;
-                transform: scale(0.9);
-                border: 8px solid #ffffff;
+                border-radius: 20px;
+                transition: all .35s ease;
             }
         }
-    }
-    .content {
-        text-align: center;
-        position: absolute;
-        bottom: 35px;
-        left: 50%;
-        transform: translateX(-50%);
-        .title {
-           margin-bottom: 0;
-            a {
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 26px;
-                color: #000000;
-                transition: all .4s ease-in-out;
-                @include media-only ("xs", min) {
-                    font-size: 24px;
-                    line-height: 30px;
-                }
-                &:hover {
-                    color: var(--color-primary);
-                }
-            }
-        }
-        .label {
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 20px;
-            color: #000000;
-            margin-bottom: 20px;
-            @include media-only ("xs", min) {
-                font-size: 18px;
-                line-height: 22px;
-            }
-        }
-        .item-social {
-            ul {
-                justify-content: center;
-            }
-        }
-    }
-}
-
-.ayo-team-box-2 {
-    margin-bottom: 50px;
-    &:hover {
-        .item-img {
-            a {
-                img {
-                    transform: scale(1.0);
-                }
-            }
-            .content {
-                box-shadow: none;
-                &::after {
-                    transform: scale(1.0);
-                    opacity: 1;
-                }
-                .title {
-                    a {
-                        color: $color-white;
-                    }
-                }
-                .designation {
-                    color: $color-white;
-                }
-            }
-        }
-    }
-    .item-img {
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        text-align: center;
         &::after {
             content: "";
-            height: 343px;
+            height: 20%;
             width: 100%;
-            background: #FAFAFA;
-            border-radius: 50px;
+            background-color: #000;
+            filter: blur(70px);
             position: absolute;
             bottom: 0;
             left: 0;
-            z-index: -1;
-            @include media-only ("xs", min) {
-                border-radius: 100px;
-            }
-        }
-        a {
-            img {
-                transform: scale(1.02);
-                transition: all 0.4s linear;
-            }
-        }
-        .content {
-            position: absolute;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
-            border-radius: 30px;
-            padding: 30px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            transition: all 0.4s linear;
-            z-index: 1;
-            @include media-only (375px, min) {
-                bottom: 45px;
-                left: 53px;
-                right: 53px;
-            }
-            @include media-only ("sm", min) {
-                border-radius: 80px;
-                padding: 15px 0px;
-            }
-            &::after {
-                content: "";
-                height: 100%;
-                width: 100%;
-                background: $color-primary;
-                border-radius: 30px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                z-index: -1;
-                transform: scale(0.5);
-                opacity: 0;
-                transition: all 0.4s linear;
-                @include media-only ("sm", min) {
-                    border-radius: 80px;
-                }
-            }
-            .title {
-                line-height: 30px;
-                text-align: center;
-                margin-bottom: 5px;
-                a {
-                    color: $color-black;
-                    font-size: 20px;
-                    transition: all .4s ease-in-out;
-                    @include media-only ("xs", min) {
-                        font-size: 24px;
-                    }
-                }
-            }
-            .designation {
-                font-size: 15px;
-                text-align: center;
-                text-transform: capitalize;
-                color: #7D7D7D;
-            }
-            .item-social {
-                margin-top: 20px;
-                ul {
-                    justify-content: center;
-                }
-            }
+            right: 0;
         }
     }
 }
 
-.ayo-single-team-box {
-    .phone-mail-wrapper {
-        margin-bottom: 40px;
-        .phone-wrap {
-            margin-bottom: 10px;
-            .text {
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 30px;
-                color: $color-black;
-            }
+.team-content {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    right: 30px;
+    z-index: 1;
+    .content {
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
             a {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 30px;
-                transition: all .4s ease-in-out;
-                color: $color-black;
-                &:hover {
-                    color: $color-primary;
+                color: $color-white;
+            }
+        }
+        .designation {
+            color: #F1F1F1;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+
+.team-social {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .item-social {
+            ul {
+                li {
+                    transform: translateY(0);
+                    opacity: 1;
+                    backface-visibility: visible;
                 }
             }
         }
-        .mail-wrap {
-            margin-bottom: 0;
+    }
+    .icon-box {
+        border-radius: 50px;
+        background: rgba(0, 0, 0, 0.25);
+        display: inline-block;
+        text-align: center;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        svg {
+            color: $color-white;
         }
     }
-    .description {
-        margin-bottom: 30px;
-    }
-    .single-skill-wrapper {
-        .single-skill {
-            margin-bottom: 28px;
-            padding-bottom: 5px;
-            position: relative; 
-            &::before {
-                content: "";
-                height: 1px;
-                width: 100%;
-                background: #d1d1d1;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                border-radius: 20px;
-            }
-            .title-bar {
-                .title {
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 25px;
-                    margin-bottom: 17px;
-                    color: var(--color-black);
+    .item-social {
+        position: absolute;
+        bottom: 55px;
+        right: 5px;
+        ul {
+            li {
+                opacity: 0;
+                backface-visibility: hidden;
+                transform: translateY(10px);
+                transition: all 0.3s ease-in-out;
+                line-height: 45px;
+                &:nth-child(1) {
+                    transition-delay: .4s;
                 }
-            }
-            .skill-bar {
-                background: #D9D9D9;
-                border-radius: 10px;
-                height: 5px;
-                padding: 0;
-                border: 0;
-                .skill-per {
-                    height: 5px;
-                    width: 0;
-                    background: $color-primary;
-                    border-radius: 10px;
-                    transition: 2s linear;
-                    position: relative;
-                    &::before {
-                        content: attr(data-per);
-                        position: absolute;
-                        font-weight: 500;
-                        font-size: 15px;
-                        line-height: 20px;
-                        color: $color-black;
-                        bottom: 20px;
-                        right: 0;
-                        font-family: var(--font-title);
+                &:nth-child(2) {
+                    transition-delay: .3s;
+                }
+                &:nth-child(3) {
+                    transition-delay: .2s;
+                }
+                &:nth-child(4) {
+                    transition-delay: .1s;
+                }
+                &:last-child {
+                    a {
+                        margin-bottom: 0;
+                    }
+                }
+                a {
+                    background-color: #fff;
+                    margin-bottom: 1px;
+                    transition: all .3s ease-in-out;
+                    border: 0;
+                    &.item-fb {
+                        background-color: #E7F1FF;
+                        color:#1877F2;
+                        &:hover {
+                            background-color:#1877F2;
+                            border-color: #1877F2;
+                            i {
+                                color: $color-white;
+                            }
+                        }
+                    }
+                    &.item-twit {
+                        &:hover {
+                            background-color:#1DA1F2;
+                            border-color: #1DA1F2;
+                            i {
+                                color: $color-white;
+                            }
+                        }
+                    }
+                    &.item-In {
+                        background-color: #E1F5FF;
+                        color:#0077B5;
+                        &:hover {
+                            background-color:#0077B5;
+                            border-color: #0077B5;
+                            i {
+                                color: $color-white;
+                            }
+                        }
+                    }
+                    &.item-insta {
+                        color: #E60023;
+                        background-color: #FFEBEE;
+                        &:hover {
+                            background-color:#FD1D1D;
+                            border-color: #FD1D1D;
+                            i {
+                                color: $color-white;
+                            }
+                        }
                     }
                 }
             }

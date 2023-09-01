@@ -37,54 +37,6 @@
     .item-content {
         padding: 35px 24px 17px 24px;
         position: relative;
-        .tag {
-            a {
-                background-color: #F7F4FF;
-                border-radius: 33px;
-                padding: 9px 15px;
-                font-weight: 500;
-                font-size: 15px;
-                line-height: 20px;
-                color: #6231EE;
-                display: inline-block;
-                text-align: center;
-                position: absolute;
-                top: -20px;
-                left: 24px;
-                transition: all .4s ease-in-out;
-                text-transform: capitalize;
-                &:hover {
-                    background-color: var(--color-white);
-                    color: var(--color-primary);
-                }
-            }
-        }
-        .entry-meta {
-            display: flex;
-            gap: 50px;
-            li {
-                color: #717171;
-                font-size: 16px;
-                @include media-only ("xs", min) {
-                    font-size: 18px;
-                }
-                i {
-                    color: $color-primary;
-                    margin-right: 10px;
-                }
-                a {
-                    color: #717171;
-                    transition: all .4s ease-out;
-                    font-size: 18px;
-                    @include media-only ("xs", min) {
-                        font-size: 18px;
-                    }
-                    &:hover {
-                        color: var(--color-primary);
-                    }
-                }
-            }
-        }
         .title {
             margin-bottom: 11px;
             font-size: 25px;
@@ -96,6 +48,107 @@
                 &:hover {
                     color: var(--color-primary);
                 }
+            }
+        }
+    }
+    &.style-2 {
+        margin-bottom: 24px;
+        border: 0;
+        border-radius: 0;
+        &:hover {
+            .item-img {
+                a {
+                    img {
+                        filter: grayscale(100%);
+                        transform: scale(1.05);
+                    }
+                }
+                .tag {
+                    .rt-tag {
+                        background-color: $color-primary;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        .item-img {
+            padding: 0;
+            transition: all .45s ease-in-out;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+
+            a {
+                img {
+                    border-radius: 10px 10px 0 0;
+                    transition: all .3s ease;
+                }
+            }
+            .tag {
+                .rt-tag {
+                    position: absolute;
+                    top: 24px;
+                    left: 24px;
+                    border-radius: 3px;
+                    width: auto;
+                }
+            }
+        }
+        .item-content {
+            padding: 35px 24px 17px;
+            border-radius: 0 0 10px 10px;
+            background-color: $color-white;
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+            .entry-meta {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.tag {
+    a {
+        background-color: #F7F4FF;
+        border-radius: 33px;
+        padding: 9px 15px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: $color-primary;
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        top: -20px;
+        left: 24px;
+        transition: all .4s ease-in-out;
+        text-transform: capitalize;
+        &:hover {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+        }
+    }
+}
+.entry-meta {
+    display: flex;
+    gap: 50px;
+    li {
+        color: #717171;
+        font-size: 16px;
+        @include media-only ("xs", min) {
+            font-size: 18px;
+        }
+        i {
+            color: $color-primary;
+            margin-right: 10px;
+        }
+        a {
+            color: #717171;
+            transition: all .4s ease-out;
+            font-size: 18px;
+            @include media-only ("xs", min) {
+                font-size: 18px;
+            }
+            &:hover {
+                color: var(--color-primary);
             }
         }
     }

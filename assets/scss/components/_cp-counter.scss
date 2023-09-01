@@ -2,6 +2,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 95px 0;
+    &.style-2 {
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: rgba(12, 22, 55, 0.65);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
 }
 
 

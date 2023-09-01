@@ -147,6 +147,50 @@
 	}
 }
 
+.banner-button {
+	.banner-btn {
+		color: $color-primary;
+		background-color: $color-white;
+		border: 1px solid $color-white;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: capitalize;
+		text-align: center;
+		display: inline-block;
+		padding: 15px 24px 17px;
+		border-radius: 3px;
+		transition: all .35s ease-in-out;
+		&:hover {
+			background-color: transparent;
+			border-color: $color-white;
+			color: $color-white;
+		}
+	}
+}
+
+.button-style-2 {
+	.btn-style-2 {
+		background-color: transparent;
+		border: 1px solid $color-primary;
+		color: $color-primary;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: capitalize;
+		text-align: center;
+		display: inline-block;
+		padding: 12px 24px 13px;
+		border-radius: 3px;
+		transition: all .35s ease-in-out;
+		&:hover {
+			background-color: $color-primary;
+			border-color: $color-primary;
+			color: $color-white;
+		}
+	}
+}
+
 .ayo-button-2 {
 	.ayo-btn-2 {
 		background: $color-primary;
