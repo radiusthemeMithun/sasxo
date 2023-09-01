@@ -120,6 +120,9 @@
                     &.item-fb {
                         background-color: #E7F1FF;
                         color:#1877F2;
+                        i {
+                            color:#1877F2;
+                        }
                         &:hover {
                             background-color:#1877F2;
                             border-color: #1877F2;
@@ -129,6 +132,9 @@
                         }
                     }
                     &.item-twit {
+                        i {
+                            color: #1DA1F2;
+                        }
                         &:hover {
                             background-color:#1DA1F2;
                             border-color: #1DA1F2;
@@ -140,6 +146,9 @@
                     &.item-In {
                         background-color: #E1F5FF;
                         color:#0077B5;
+                        i {
+                            color:#0077B5;
+                        }
                         &:hover {
                             background-color:#0077B5;
                             border-color: #0077B5;
@@ -151,6 +160,9 @@
                     &.item-insta {
                         color: #E60023;
                         background-color: #FFEBEE;
+                        i {
+                            color: #FD1D1D;
+                        }
                         &:hover {
                             background-color:#FD1D1D;
                             border-color: #FD1D1D;
