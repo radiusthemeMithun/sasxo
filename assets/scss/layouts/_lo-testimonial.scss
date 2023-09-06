@@ -29,4 +29,32 @@
     }
 }
 
+.swiper-button {
+    .swiper-button-prev, .swiper-button-next {
+        height: 60px;
+        width: 60px;
+        border-radius: 5px;
+        background-color: #F4F4F4;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: #FFF;
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+        }
+        &::after {
+            display: none;
+        }
+        i {
+            color: $color-black;
+        }
+    }
+    .swiper-button-prev {
+        left: auto;
+        right: 80px;
+    }
+}
+
 

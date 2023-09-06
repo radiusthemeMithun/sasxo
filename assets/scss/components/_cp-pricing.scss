@@ -239,4 +239,18 @@
             }
         }
     }
+
+    &.sas-price-box-2 {
+        .pricing-box {
+            .pricing__price {
+                .month {
+                    font-size: 16px;
+                    color: $color-body;
+                    font-weight: 400;
+                    line-height: 22px;
+                    display: block;
+                }
+            }
+        }
+    }
 }

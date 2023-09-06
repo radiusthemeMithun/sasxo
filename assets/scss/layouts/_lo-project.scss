@@ -3,6 +3,19 @@
  * Layout - Project.
  */
 
+
+ .project-wrap {
+    padding: 120px 0 0 0;
+    z-index: 2;
+    .section-heading {
+        @include media-only ("lg", min) {
+            width: 521px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+ }
+
 .ayo-project-wrap {
     background: #070623;
     overflow: hidden;

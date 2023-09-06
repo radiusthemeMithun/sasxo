@@ -166,6 +166,16 @@
 			border-color: $color-white;
 			color: $color-white;
 		}
+		&.style-2 {
+			background-color: $color-primary;
+			color: $color-white;
+			border: 1px solid $color-primary;
+			&:hover {
+				background-color: transparent;
+				color: $color-primary;
+				border-color: $color-primary;
+			}
+		}
 	}
 }
 
@@ -187,6 +197,14 @@
 			background-color: $color-primary;
 			border-color: $color-primary;
 			color: $color-white;
+		}
+		&.fill-btn {
+			background-color: $color-primary;
+			color: $color-white;
+			&:hover {
+				background-color: transparent;
+				color: $color-primary;
+			}
 		}
 	}
 }

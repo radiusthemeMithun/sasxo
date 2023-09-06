@@ -2,74 +2,11 @@
  * Layout - About.
  */
 
-.ayo-about-wrap {
-    background-color: var(--color-gray);
-    position: relative;
-    padding: 70px 0px 140px 0px;
-    overflow: hidden;
-}
-
-
-.ayo-about-wrap-2 {
-    padding-bottom: 140px;
-    position: relative;
-    .rt-shape {
-        width: 456px;
-        height: 689px;
-        background: #F7F8FA;
-        border-radius: 0px 70px 0px 0px;
-        position: absolute;
-        top: -70px;
-        left: 0;
-        display: none;
+.about-wrap {
+    padding: 120px 0 105px;
+    .text-box {
         @include media-only ("lg", min) {
-            display: block;
+            margin-left: -50px;
         }
-        @include media-only (1921px, min) {
-            width: 656px;
-        }
-        @include media-only (2200px, min) {
-            width: 756px;
-        }
-    }
-}
-
-.ayo-about-wrap-3 {
-    background: $color-gray;
-}
-
-.ayo-about-wrap-4 {
-    background-color: $color-gray;
-    padding-top: 0;
-}
-
-.ayo-about-wrap-5 {
-    background-color: $color-gray;
-}
-.ayo-about-wrap-6 {
-    padding-bottom: 0;
-}
-
-.ayo-about-wrap-7 {
-    // padding: 70px 0px;
-    background: $color-gray;
-    @include media-only ("lg", min) {
-        padding-bottom: 70px;
-    }
-    .section-heading {
-        text-align: center;
-        @include media-only ("lg", min) {
-            width: 538px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-}
-
-
-.ayo-about-tab-wrap {
-    background-color: $color-gray;
-    @include media-only ("lg", min) {
-        padding: 0px 0px 140px 0px;
     }
 }

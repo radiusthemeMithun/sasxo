@@ -44,6 +44,7 @@
     }
 }
 
+
 .banner-text {
     @include media-only ("md", min) {
         margin-bottom: 45px;
@@ -57,4 +58,45 @@
             color: $color-white;
         }
     }
+}
+
+
+.banner-wrap-2 {
+    padding: 0 0 120px 0;
+}
+
+.banner-layout-2 {
+    background-color: #FEF7F2;
+    padding: 0;
+    border-radius: 0;
+    height: 473px;
+    position: relative;
+    .banner-text {
+        @include media-only ("lg", min) {
+            margin-bottom: 0;
+            padding: 110px 40px 0 80px;
+        }
+        .text-box {
+            p {
+                color: $color-body;
+                font-weight: 400;
+            }
+            .heading-title {
+                color: $color-black;
+            }
+        }
+    } 
+    .shape {
+        position: absolute;
+        top: 120px;
+        right: 42%;
+        svg {
+            color: $color-black;
+        }
+    }
+}
+
+.banner-img-2 {
+    position: absolute;
+    bottom: 0;
 }

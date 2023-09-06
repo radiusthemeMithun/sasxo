@@ -48,4 +48,11 @@
 			line-height: 50px; 
 		}
   	}
+	&.style-2 {
+		@include media-only ("lg", min) {
+            width: 521px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+	}
 }

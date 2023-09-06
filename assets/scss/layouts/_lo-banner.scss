@@ -21,6 +21,14 @@
     }
 }
 
+.hero-bannar-wrap-2 {
+    background-color: #F2FFF4;
+    @include media-only ("md", min) {
+        padding-top: 165px;
+        padding-bottom: 0px;
+    }
+}
+
 .hero-layout-1 {
     .section-heading {
         margin-bottom: 30px;
@@ -99,6 +107,54 @@
             }
         }
     }
+    &.style-2 {
+        .section-heading {
+            margin-bottom: 50px;
+            .heading-title {
+                @include media-only ("lg", min) {
+                    font-size: 55px;
+                    line-height: 70px;
+                }
+            }
+        }
+        .input-group {
+            .form-control {
+                height: 60px;
+                border-radius: 5px;
+                border: 1px solid #EAEAEA;
+                background-color: #FFF;
+            }
+            .btn-outline-secondary {
+                background-color: $color-black;
+                height: auto;
+                width: auto;
+                color: $color-white;
+                padding: 13px 25px;
+                font-size: 15px;
+                font-weight: 700;
+                position: absolute;
+                right: 20px;
+                z-index: 3;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: $color-primary;
+
+                }
+            }
+        }
+        .about-list {
+            gap: 30px;
+            li {
+                font-size: 16px;
+                i {
+                    color: #FFAE11;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 
 .hero-banner-img {
@@ -131,6 +187,44 @@
                     position: absolute;
                     top: -145px;
                     right: -85px;
+                }
+            }
+        }
+    }
+}
+
+.image-box-2 {
+    .item-img {
+        position: relative;
+        z-index: 1;
+        .element-shape {
+            ul {
+                li {
+                    position: absolute;
+                    &:nth-child(1) {
+                        top: 80px;
+                        left: 0;
+                    }
+                    &:nth-child(2) {
+                        top: 70px;
+                        right: -30px;
+                    }
+                    &:nth-child(3) {
+                        top: 325px;
+                        right: -110px;
+                    }
+                    &:nth-child(4) {
+                        top: 360px;
+                        left: 100px;
+                    }
+                    &:nth-child(5) {
+                        top: 70px;
+                        left: 280px;
+                    }
+                    &:nth-child(6) {
+                        top: 235px;
+                        right: 130px;
+                    }
                 }
             }
         }

@@ -12,7 +12,24 @@
     background-color: transparent;
 }
 .rt-header.style-2 {
-    background-color: #000;
+    @media (min-width: 1200px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1320px;
+        }
+        }
+        @media (min-width: 1400px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1700px;
+        }
+    }
 }
 
 .rt-header.style-3 {
@@ -46,9 +63,6 @@
     animation-delay: 0s;
 }
 
-.rt-header.style-2.sticky .navbar-wrap {
-    background-color: rgba(0, 0, 0, 0.98);
-}
 .rt-header.style-3.sticky .navbar-wrap {
     background: rgba(91, 38, 240, .98);
 }
@@ -69,92 +83,26 @@
 
 .header-action {
 	.inline-list {
-		gap: 24px;
+		gap: 10px;
 		justify-content: end;
-		.single-item {
-			.login {
-				font-family: var(--font-title);
-				font-weight: 300;
-				font-size: 15px;
-				line-height: 19px;
-				color: var(--color-black);
-                transition: all .3s ease-in-out;
-                &:hover {
-                    color: $color-primary;
-                    i {
-                        color: $color-primary;
-                    }
-                }
-                i {
-                    color: var(--color-black);
-                    font-size: 15px;
-                    margin-right: 5px;
-                    transition: all .3s ease-in-out;
-                }
-			}
-		}
 	}
 }
-.header-action.style-2 {
-    .inline-list {
-        .single-item {
-            .login {
-                color: #D0D0D0;
-                &:hover {
-                    color: $color-primary;
-                    i {
-                        color: $color-primary;
-                    }
-                }
-                i {
-                    color: #D0D0D0;
-                }
-            }
-        }
-    }
-}
-
-.header-action.style-3 {
-    .single-item {
-        .login {
-            color: var(--color-white);
-            &:hover {
-                color: #F84436;
-                i {
-                    color: #F84436;
-                }
-            }
-            i {
-                color: var(--color-white);
-            }
-        }
-    }
-    .ayo-button-3 {
-        .ayo-btn-3 {
-            border-color: #F84436;
-            &:hover {
-                color: $color-white;
-            }
-            &::before {
-                background-color: #F84436;
-            }
-        }
-    }
-}
-
-.header-action.style-4 {
-    .single-item {
-        .login {
-            color: #fff;
-            &:hover {
-                color: $color-primary;
-                i {
-                    color: $color-primary;
-                }
-            }
-            i {
-                color: #fff;
-            }
+.login-button {
+    .login-btn {
+        color: $color-primary;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        display: inline-block;
+        text-align: center;
+        padding: 12px 24px 13px;
+        border: 1px solid $color-primary;
+        border-radius: 3px;
+        transition: all .4s ease-in-out;
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
         }
     }
 }

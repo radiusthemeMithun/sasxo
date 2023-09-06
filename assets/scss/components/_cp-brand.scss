@@ -1,3 +1,4 @@
+
 .brand {
     display: grid;
     gap: 30px;
@@ -30,6 +31,21 @@
             cursor: pointer;
             opacity: .75;
             transition: all .4s ease-in-out;
+        }
+    }
+    &.style-2 {
+        li {
+            &:hover {
+                img {
+                    mix-blend-mode: normal;
+                }
+            }
+            img {
+                filter: invert(0);
+                opacity: 1;
+                mix-blend-mode: luminosity;
+                transition: all .4s ease-in-out;
+            }
         }
     }
 }
