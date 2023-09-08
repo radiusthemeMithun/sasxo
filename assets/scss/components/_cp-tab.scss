@@ -40,6 +40,120 @@
 		}
 	}
 }
+.tab--style--2 {
+	.nav-tabs {
+		border-bottom: 0;
+		margin-bottom: 50px;
+		position: relative;
+		z-index: 1;
+		background-color: #F9F9F9;
+		box-shadow: none;
+		padding: 20px;
+		width: 384px;
+		margin-left: auto;
+		margin-right: auto;
+		.nav-item {
+			display: inline-block;
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+			.nav-link {
+				background-color: transparent;
+				border: 0;
+				border-radius: 0;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 20px;
+				text-transform: capitalize;
+				color: var(--color-black);
+				padding: 14px 25px;
+				span {
+					font-weight: 400;
+					font-size: 14px;
+				}
+				&:focus {
+					outline: 0;
+					box-shadow: none;
+				}
+			}
+			.active {
+				color: var(--color-primary);
+				background: var(--color-white);
+				padding: 14px 25px;
+			}
+		}
+	}
+}
+
+.tab--style--3 {
+	.nav-tabs {
+		border-bottom: 1px solid #dedede;
+		margin-bottom: 50px;
+		justify-content: space-between;
+		align-items: center;
+		.nav-item {
+			max-width: 25%;
+			margin-bottom: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+			.nav-link {
+				background-color: transparent;
+				border: 0;
+				border-radius: 0;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 20px;
+				text-transform: capitalize;
+				color: var(--color-black);
+				.icon {
+					height: 60px;
+					width: 60px;
+					background-color: #F2F1FF;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 7px;
+					svg {
+						color: #473BEF;
+					}
+				}
+				.title {
+					font-size: 18px;
+					font-weight: 600;
+					line-height: 28px;
+					text-transform: capitalize;
+					margin-left: 15px;
+					flex: 1;
+				}
+				&:focus {
+					outline: 0;
+					box-shadow: none;
+				}
+			}
+			.active {
+				position: relative;
+				&::before {
+					content: "";
+					height: 1px;
+					width: 100%;
+					background-color: #473BEF;
+					position: absolute;
+					bottom: -10px;
+					left: 0;
+					transition: all .3s ease;
+				}
+				.icon {
+					background-color: #473BEF;
+					svg {
+						color: $color-white;
+					}
+				}
+			}
+		}
+	}
+}
 
 .product-tab-1 {
     .nav-tabs {

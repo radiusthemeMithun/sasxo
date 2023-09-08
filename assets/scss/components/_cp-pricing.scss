@@ -241,15 +241,71 @@
     }
 
     &.sas-price-box-2 {
+        padding: 60px 45px;
+        position: relative;
+        .tag {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &::after {
+            background-color: $color-primary;
+        }
+        &:hover {
+            .pricing-box {
+                .pricing__price {
+                    .month {
+                        color: $color-white;
+                    }
+                }
+            }
+            .plan-button {
+                a {
+                    color: $color-white;
+                    border-color: $color-white;
+                }
+            }
+        }
         .pricing-box {
+            border-bottom: 1px solid #CBCBCB;
             .pricing__price {
                 .month {
                     font-size: 16px;
                     color: $color-body;
                     font-weight: 400;
                     line-height: 22px;
-                    display: block;
+                    transition: all .3s ease-in-out;
                 }
+            }
+        }
+        .catagoery {
+            color: $color-black;
+            font-family: $font-title;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        p {
+            font-weight: 400;
+        }
+        .listing-price {
+            margin-bottom: 40px;
+            ul {
+                li {
+                    i {
+                        font-size: 20px;
+                        color: #11D985;
+                    }
+                }
+            }
+        }
+        .plan-button {
+            a {
+                border-radius: 0;
+                background-color: transparent;
+                color: $color-primary;
+                border: 1px solid $color-primary;
+                width: auto;
             }
         }
     }
