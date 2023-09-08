@@ -47,6 +47,98 @@
             padding: 70px 0 60px;
         }
     }
+    &.style-4 {
+        background-color: transparent;
+        &::before {
+            display: none;
+        }
+        .footer-logo {
+            p {
+                color: $color-black;
+            }
+            .contact-wrapper {
+                .text {
+                    color: $color-black;
+                }
+                .phone {
+                    color: $color-black;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                    .line {
+                       
+                        background-color: $color-black;
+                    }
+                }
+            }
+        }
+        .footer-link {
+            ul {
+                li {
+                    .link {
+                        color: $color-black;
+                        &::before {
+                            color: $color-black; 
+                        }
+                        &:hover {
+                            color: $color-primary;
+                            &::before {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-newsletter {
+            .input-group {
+                .form-control {
+                    border: 1px solid #B7B7B7;
+                }
+            }
+            .membership {
+                .text {
+                    color: $color-body;
+                    a {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+        .item-social {
+            .text {
+                color: $color-black;
+                font-weight: 600;
+            }
+        }
+        .footer-bottom {
+            border-top: 1px solid #DEDFE0;
+            .text {
+                color: $color-body;
+                a {
+                    color: $color-black;
+                    font-weight: 500;
+                }
+            }
+            .ft-bottom-link {
+                gap: 30px;
+                li {
+                    .link {
+                        color: $color-body;
+                        &::before {
+                            background-color: $color-body;
+                        }
+                        &:hover {
+                            color: $color-black;
+                            &::before {
+                                background-color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -258,6 +350,9 @@
     margin-bottom: 23px;
     color: $color-white;
     line-height: normal;
+    &.style-2 {
+        color: $color-black;
+    }
 }
 
 

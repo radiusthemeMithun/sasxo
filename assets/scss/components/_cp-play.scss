@@ -14,17 +14,20 @@
     .play-icon {
         background: transparent;
         border-radius: 50%;
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         position: relative;
         z-index: 1;
         transition: all .7s ease-in-out;
-        border: 1px solid var(--color-black);
-        color: $color-black;
+        border: 1px solid var(--color-white);
         overflow: hidden;
+        i {
+            font-size: 15px;
+            color: $color-white;
+        }
         &::after {
             content: "";
             height: 80px;
@@ -41,11 +44,11 @@
     }
     .play-text {
         font-family: var(--font-title);
-        font-weight: 400;
+        font-weight: 700;
         font-size: 15px;
         line-height: 19px;
         text-transform: capitalize;
-        color: #191D27;
+        color: $color-white;
         margin-left: 10px;
         transition: all .7s ease-in-out;
     }

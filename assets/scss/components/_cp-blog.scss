@@ -103,6 +103,44 @@
             }
         }
     }
+    &.style-3 {
+        .item-img {
+            border-radius: 10px;
+            a {
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
+        .item-content {
+            box-shadow: none;
+            background-color: transparent;
+            border-radius: 0;
+            padding: 0;
+            padding-top: 25px;
+            .entry-meta {
+                li {
+                    position: relative;
+                    &:last-child {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        height: 5px;
+                        width: 5px;
+                        background-color: #8D8D8D;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -25px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .tag {
@@ -150,6 +188,55 @@
             &:hover {
                 color: var(--color-primary);
             }
+        }
+    }
+}
+
+.blog-post-info {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 25px;
+    .entry-meta {
+        margin-bottom: 4px;
+        li {
+            position: relative;
+            &:last-child {
+                &::before {
+                    display: none;
+                }
+            }
+            &::before {
+                content: "";
+                height: 5px;
+                width: 5px;
+                background-color: #8D8D8D;
+                border-radius: 5px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -25px;
+            }
+        }
+    }
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+        a {
+            color: $color-black;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+}
+
+.blog-button {
+    .blog-btn {
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: $color-black;
         }
     }
 }

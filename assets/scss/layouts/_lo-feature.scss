@@ -50,6 +50,46 @@
     }
 }
 
+.feature-wrap-5 {
+    z-index: 1;
+    padding: 110px 0 150px;
+    background-image: url(../../media/bg/feature-4.svg);
+    background-repeat: no-repeat;
+    .element-shape {
+        ul {
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                   bottom: 0;
+                   right: 45%;
+                }
+                &:nth-child(2) {
+                    top: 220px;
+                    right: 45%;
+                    img {
+                        background-color: $color-white;
+                    } 
+                }
+                &:nth-child(3) {
+                    top: 60px;
+                    right: 42.5%;
+                }
+                &:nth-child(4) {
+                    top: 106px;
+                    right: 28%;
+                    img {
+                        background-color: $color-white;
+                    }
+                }
+                &:nth-child(5) {
+                    top: 106px;
+                    right: 128px;
+                }
+            }
+        }
+    }
+}
+
 
 
 

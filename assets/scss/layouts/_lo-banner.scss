@@ -32,8 +32,8 @@
 .hero-bannar-wrap-3 {
     background-image: url(../../media/banner/banner-9.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 120px 0;
+    // background-size: cover;
+    padding: 170px 0 60px;
 }
 
 .hero-layout-1 {
@@ -180,8 +180,25 @@
                 color: $color-white;
             }
         }
+
     }
 }
+
+.video-area-wrap {
+    gap: 30px;
+    .button-style-2 {
+        .fill-btn {
+            border-radius: 0;
+        }
+    }
+}
+
+// .banner-img-3 {
+//     border-radius: 20px;
+//     background-color: #FFF;
+//     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+//     padding: 37px;
+// }
 
 .hero-banner-img {
     @include media-only ("lg", min) {
