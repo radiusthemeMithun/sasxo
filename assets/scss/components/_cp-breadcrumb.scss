@@ -1,0 +1,27 @@
+
+
+.breadcrumb {
+    .breadcrumb-item {
+        font-size: 20px;
+        font-weight: 500;
+        a {
+            color: $color-body;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+        &::before {
+            color: $color-body;
+            padding-right: 3px;
+        }
+    }
+}
+
+.breadcrumb-item.active {
+    color: $color-body;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 3px;
+}

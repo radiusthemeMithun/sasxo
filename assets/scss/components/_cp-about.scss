@@ -52,3 +52,79 @@
     text-align: center;
     z-index: -1;
 }
+
+.about-imglayout {
+    img {
+        border-radius: 20px;
+    }
+}
+
+.about-imglayout2 {
+    img {
+        border-radius: 10px;
+    }
+}
+
+.about-box-2 {
+    .text-box {
+        .heading-title {
+            font-size: 24px;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        .about-list {
+            margin-bottom: 18px;
+            ul {
+                li {
+                    font-weight: 600;
+                    i {
+                        color: #C9C9C9;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        p {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+
+.sasxo-about-tab-box {
+    .text-box {
+        .heading-title {
+            font-size: 30px;
+            line-height: 45px;
+        }
+        .about-list {
+            ul {
+                li {
+                    color: $color-body;
+                    font-size: 16px;
+                    font-weight: 400;
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-tab-image-layout {
+    gap: 25px;
+    .item-img {
+        @include media-only ("lg", min) {
+            margin-top: -90px;
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+    .item-img2 {
+        img {
+            border-radius: 10px;
+        }
+    }
+}

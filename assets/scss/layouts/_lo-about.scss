@@ -20,3 +20,21 @@
         right: 0;
     }
 }
+
+.about-wrap-3 {
+    .section-heading {
+        @include media-only ("lg", min) {
+            width: 683px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+.about-wrap-4 {
+    padding-bottom: 120px;
+}
+.about-tab-wrap {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}

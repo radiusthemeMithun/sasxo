@@ -1,8 +1,9 @@
 
 
 .process-wrap {
-    background-color: $color-primary;
+    background-color: #238A59;
     z-index: 1;
+    padding: 90px 0 185px;
     .map-shape {
         position: absolute;
         top: 0;
@@ -10,6 +11,7 @@
         z-index: -1;
     }
     .section-heading {
+        margin-bottom: 120px;
         .heading-title {
             color: $color-white;
         }
@@ -107,6 +109,40 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.process-dash-line {
+    .element { 
+        li {
+            position: absolute;
+            .text {
+                color: $color-white;
+                font-family: $font-title;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            &:nth-child(1) {
+                bottom: -35px;
+                left: 216px;
+            }
+            &:nth-child(2) {
+                top: -90px;
+                left: 33%;
+            }
+            &:nth-child(3) {
+                bottom: -90px;
+                left: 50%;
+            }
+            &:nth-child(4) {
+                top: -80px;
+                left: 59%;
+            } 
+            &:nth-child(5) {
+                bottom: -60px;
+                left: 76%;
+            }       
         }
     }
 }

@@ -155,6 +155,38 @@
 	}
 }
 
+.tab--style--4 {
+	.nav-tabs {
+		border-bottom: 0;
+		margin-bottom: 40px;
+		.nav-item {
+			display: inline-block;
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+			.nav-link {
+				background-color: #F8F5FF;
+				border: 0;
+				border-radius: 70px;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: normal;
+				padding: 12px 33px;
+				color: $color-primary;
+				&:focus {
+					outline: 0;
+					box-shadow: none;
+				}
+			}
+			.active {
+				background-color: $color-primary;
+				color: $color-white;
+			}
+		}
+	}
+}
+
 .product-tab-1 {
     .nav-tabs {
         border-bottom: 0;

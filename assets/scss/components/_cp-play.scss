@@ -53,3 +53,46 @@
         transition: all .7s ease-in-out;
     }
 }
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    &:hover {
+        .play-btn {
+            background: $color-primary;
+        }
+    }
+    .play-btn {
+        width: 80px;
+        height: 80px;
+        background-color: $color-primary;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all .4s linear;
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+            animation: pulse-border 2000ms ease-out infinite;
+            z-index: -1;
+        }
+        i {
+            color: $color-white;
+            font-size: 30px;
+            position: relative;
+            left: 3px;
+        }
+    }
+}

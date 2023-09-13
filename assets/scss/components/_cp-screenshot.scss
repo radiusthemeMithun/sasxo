@@ -10,3 +10,19 @@
         }
     }
 }
+
+.mobile-frame {
+    left: 50%;
+    top: 22px;
+    z-index: -1;
+    width: 300px;
+    height: 550px;
+    display: block;
+    position: absolute;
+    // border-radius: 50px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // box-shadow: 0 23px 42px rgba(0, 0, 0, 0.2);
+    background-image: url(../../media/screenshot/screenshot-1.svg);
+    transform: translateX(-50%);
+}
