@@ -57,4 +57,26 @@
     }
 }
 
+.testimonial-wrap-3 {
+    background-color: $color-primary;
+    background-image: url(../../media/bg/testimonial-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    .section-heading {
+        @include media-only ("lg", min) {
+            width: 621px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .subTitle {
+            background-color: #0C6CFD;
+            color: $color-white;
+        }
+        .heading-title {
+            color: $color-white;
+        }
+    }
+}
+
 

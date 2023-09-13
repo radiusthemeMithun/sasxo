@@ -49,6 +49,21 @@
 
 .counter-box {
     gap: 15px;
+    &.style-2 {
+        .item-icon {
+            svg {
+                color: $color-primary;
+            }
+        }
+        .sas-counter {
+            .counterUp {
+                color: $color-black;
+            }
+            .label-1 {
+                color: $color-black;
+            }
+        }
+    }
 }
 
 .sas-counter {

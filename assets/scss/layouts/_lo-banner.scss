@@ -35,6 +35,17 @@
     // background-size: cover;
     padding: 170px 0 60px;
 }
+.hero-bannar-wrap-4 {
+    padding: 244px 0 200px;
+    position: relative;
+    z-index: 1;
+    .shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
 
 .hero-layout-1 {
     .section-heading {
@@ -53,6 +64,19 @@
             @include media-only ("lg", min) {
                 font-size: 60px;
                 line-height: 75px;
+            }
+            .color-text {
+                color: $color-primary;
+                position: relative;
+                &::after {
+                    content: "";
+                    height: 2px;
+                    width: 100%;
+                    background-color: $color-primary;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
             }
         }
     }
@@ -193,12 +217,27 @@
     }
 }
 
-// .banner-img-3 {
-//     border-radius: 20px;
-//     background-color: #FFF;
-//     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
-//     padding: 37px;
-// }
+.button-list-wrap {
+    gap: 10px;
+    .hero-sm-btn {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        display: inline-block;
+        color: $color-black;
+        background-color: transparent;
+        color: $color-black;
+        padding: 12px 24px 13px;
+        border-radius: 3px;
+        text-align: center;
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}
+
 
 .hero-banner-img {
     @include media-only ("lg", min) {
@@ -299,6 +338,41 @@
         }
         .review {
             color: #5E5E5E;
+        }
+    }
+}
+
+.hero-banner-img-4 {
+    position: relative;
+    .image-box {
+        .item-img {
+            text-align: center;
+            .element-shape {
+                li {
+                    position: absolute;
+                    &:nth-child(1) {
+                        bottom: -100px;
+                        left: 0;
+                        top: auto;
+                    }
+                    &:nth-child(2) {
+                        right: 0;
+                        top: -100px;
+                    }
+                    &:nth-child(3) {
+                        right: 40px;
+                        bottom: 0px;
+                    }
+                    &:nth-child(4) {
+                        top: 167px;
+                        right: 50px;
+                    }
+                    &:nth-child(5) {
+                        bottom: -70px;
+                        right: 250px;
+                    }
+                }
+            }
         }
     }
 }

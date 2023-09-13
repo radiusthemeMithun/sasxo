@@ -213,3 +213,81 @@
     }
 }
 
+.service-box-3 {
+    &:hover {
+        .info-box {
+            box-shadow: none;
+            border-color: #e3e3e3;
+            .shape {
+                background-color: transparent;
+                .round-shape {
+                    svg {
+                        color: #09A6FF;
+                    }
+                    &.style-2 {
+                        svg {
+                            color: #F42966;
+                        }
+                    }
+                    &.style-3 {
+                        svg {
+                            color: #6C60F2;
+                        }
+                    }
+                    &.style-4 {
+                        svg {
+                            color: #E97330;
+                        }
+                    }
+                }
+            }
+            .button-style-2 {
+                .btn-style-2 {
+                    background-color: $color-primary;
+                    color: $color-white;
+                    border-color: $color-primary;
+                }
+            }
+        }
+    }
+    .info-box {
+        background-color: transparent;
+        box-shadow: none;
+        border: 1px solid $color-white;
+        border-radius: 10px;
+        .shape {
+            background-color: transparent;
+            .round-shape {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                svg {
+                    color: #D0EEFF;
+                    transition: all .3s ease-in-out;
+                }
+                &.style-2 {
+                    svg {
+                        color: #F97FA4;
+                    }
+                }
+                &.style-3 {
+                    svg {
+                        color: #E5E2FF;
+                    }
+                }
+                &.style-4 {
+                    svg {
+                        color: #FFE4D4;
+                    }
+                }
+            }
+        }
+        .button-style-2 {
+            .btn-style-2 {
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+

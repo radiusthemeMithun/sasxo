@@ -4,6 +4,10 @@
 .testimonial-inner-2 {
     margin-top: 88px;
     margin-bottom: 160px;
+    &.style-2 {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
 }
 .testimonial-box {
     background-repeat: no-repeat;
@@ -94,6 +98,43 @@
             font-weight: 500;
             color: $color-black;
             margin-left: 20px;
+        }
+    }
+    &.style-2 {
+        text-align: center;
+        .quote-shape {
+            height: 80px;
+            width: 80px;
+            border-radius: 80px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-white;
+            border: 3px solid $color-primary;
+            @include media-only ("lg", min) {
+                margin-top: -45px;
+                transform: translateY(-45px);
+            }
+            svg {
+                color: $color-primary;
+            }
+        }
+        .item-quote {
+            color: $color-black;
+            text-align: center;
+            font-family: $font-title;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+        ul {
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .name {
+            color: $color-body;
+            font-size: 16px;
         }
     }
 }

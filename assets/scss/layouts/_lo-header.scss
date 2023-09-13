@@ -31,6 +31,9 @@
         }
     }
 }
+.rt-header.rt-header.style-4 {
+    border-bottom: 1px solid #dedede;
+}
 
 
 .rt-header.sticky .navbar-wrap {
@@ -51,15 +54,6 @@
 
 .rt-header.style-3.sticky .navbar-wrap {
     background-color: $color-black;
-}
-.rt-header.style-4.sticky .navbar-wrap {
-    background: rgba(20, 20, 21, .98);
-}
-.rt-header.style-5.sticky .navbar-wrap {
-    background: rgba(255, 255, 255, .98);
-}
-.rt-header.style-6.sticky .navbar-wrap {
-    background: rgb(56, 111, 251, .98);
 }
 
 

@@ -300,11 +300,11 @@ if ($(".testimonial-slider-wrap-2")) {
       loop: true,
       spaceBetween: 24,
       slideToClickedSlide: true,
-      // autoplay: {
-      //   delay: 5000,
-      //   disableOnInteraction: false,
-      // },
-      // speed: 800,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
       breakpoints: {
         0: {
           slidesPerView: 1,
