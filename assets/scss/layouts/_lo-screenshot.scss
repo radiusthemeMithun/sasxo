@@ -6,23 +6,6 @@
 .screenshot-wrap {
     background-color: #FBFAFF;
     padding-bottom: 80px;
-    .screenshot-box {
-        transition: all .7s ease;
-    }
-    
-    .swiper-slide {
-        &.swiper-slide-active {
-            .screenshot-box {
-                .item-img {
-                    border: 0;
-                    img {
-                        padding: 0;
-                        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-                    }
-                }
-            }
-        }
-    }
 }
 
 .screenshot-wrapper {

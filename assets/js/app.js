@@ -214,7 +214,7 @@
   ======================================*/
 
   var swiper1 = new Swiper(".screenshot-inner-slider", {
-    spaceBetween: 55,
+    spaceBetween: 0,
     slidesPerView: 5,
     slideToClickedSlide: true,
     centeredSlides: true,
