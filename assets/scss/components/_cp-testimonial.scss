@@ -11,7 +11,7 @@
 }
 .testimonial-box {
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     padding: 30px;
     .item-icon {
         height: 100px;
@@ -67,8 +67,8 @@
     text-align: center;
     @include media-only ("lg", min) {
         position: relative;
-        top: -115px;
-        left: 55px;
+        top: -130px;
+        left: 22px;
     }
 }
 
