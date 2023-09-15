@@ -65,6 +65,9 @@
                 font-size: 60px;
                 line-height: 75px;
             }
+            img {
+                animation: move 2s ease infinite;
+            }
             .color-text {
                 color: $color-primary;
                 position: relative;
@@ -269,6 +272,16 @@
                     position: absolute;
                     top: -145px;
                     right: -85px;
+                }
+                &:nth-child(3) {
+                    position: absolute;
+                    top: -20px;
+                    right: 130px;
+                    
+                    svg {
+                        color: $color-black;
+                        transform: rotate(90deg);
+                    }
                 }
             }
         }

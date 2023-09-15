@@ -112,8 +112,21 @@
 				z-index: 1;
 				padding: 8px 20px;
 				&:hover {
-					border-color: $color-black;
-					background-color: $color-black;
+					border-color: $color-white;
+					background-color: $color-white;
+					.brand-app {
+						i {
+							color: $color-black;
+						}
+					}
+					.content {
+						.label {
+							color: $color-black;
+						}
+						.text {
+							color: $color-black;
+						}
+					}
 				}
 				.brand-app {
 					i {
