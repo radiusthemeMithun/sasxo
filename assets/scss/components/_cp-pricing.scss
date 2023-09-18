@@ -258,10 +258,20 @@
                     }
                 }
             }
+            .listing-price {
+                ul {
+                    li {
+                        i {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
             .plan-button {
                 a {
-                    color: $color-white;
+                    color: $color-primary;
                     border-color: $color-white;
+                    background-color: $color-white;
                 }
             }
         }

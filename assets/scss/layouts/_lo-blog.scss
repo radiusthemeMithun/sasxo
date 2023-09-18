@@ -3,53 +3,10 @@
  * Layout - Blog.
  */
 
-.ayo-blog-wrap {
-    overflow: hidden;
-    position: relative;
-    background-color: var(--color-gray);
-    .section-heading {
-        text-align: center;
-    }
+.blog-wrap {
+    z-index: 1;
 }
 
-.ayo-blog-wrap.style-2 {
-    position: relative;
-    @include media-only ("lg", min) {
-        margin-bottom: -110px;
-        padding-bottom: 200px;
-    }
-}
-
-
-.ayo-blog-wrap-2 {
-    background: $color-white;
-    // height: 150vh;
-    color: $color-white;
-    // overflow: hidden;
-    @include media-only ("lg", min) {
-        padding-bottom: 45px;
-    }
-    .section-heading {
-        text-align: center;
-    }
-}
-.ayo-blog-wrap-2.style-2 {
-    position: relative;
-    background: $color-white;
-    height: auto;
-    @include media-only ("lg", min) {
-        padding: 10px 0px 140px;
-    }
-}
-.ayo-blog-wrap-2.style-3 {
-    padding: 140px 0px 0px;
-    height: auto;
-}
-
-.ayo-blog-wrap-3 {
-    background: $color-gray;
-    padding-bottom: 50px;
-}
 
 
 

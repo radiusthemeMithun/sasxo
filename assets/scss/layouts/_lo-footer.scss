@@ -95,6 +95,14 @@
                 .form-control {
                     border: 1px solid #B7B7B7;
                 }
+                .btn-outline-secondary {
+                    &:hover {
+                        background-color: $color-primary;
+                        i {
+                            color: $color-white;
+                        }
+                    }
+                }
             }
             .membership {
                 .text {

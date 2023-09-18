@@ -209,7 +209,31 @@
         }
 
     }
+    &.has-animation {
+        .section-heading {
+            .heading-title {
+                .color-text {
+                    &::after {
+                        width: 0;
+                        transition: all ease 1s;
+                    }
+                }
+            }
+        }
+    }
+    &.active-animation {
+        .section-heading {
+            .heading-title {
+                .color-text {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 .video-area-wrap {
     gap: 30px;
@@ -311,14 +335,17 @@
                     &:nth-child(4) {
                         top: 360px;
                         left: 100px;
+                        animation: move 2s ease infinite; 
                     }
                     &:nth-child(5) {
                         top: 70px;
                         left: 280px;
+                        animation: move 2s ease infinite;
                     }
                     &:nth-child(6) {
                         top: 235px;
                         right: 130px;
+                        animation: move 2s ease infinite;
                     }
                 }
             }
@@ -375,14 +402,22 @@
                     &:nth-child(3) {
                         right: 40px;
                         bottom: 0px;
+                        top: auto;
+                        animation: move 2s ease infinite;
+                        svg {
+                            color: $color-primary;
+                            transform: rotate(0);
+                        }
                     }
                     &:nth-child(4) {
                         top: 167px;
                         right: 50px;
+                        animation: move 2s ease infinite;
                     }
                     &:nth-child(5) {
                         bottom: -70px;
                         right: 250px;
+                        animation: move 2s ease infinite;
                     }
                 }
             }

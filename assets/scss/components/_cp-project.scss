@@ -122,4 +122,16 @@
         left: 0;
         right: 0;
     }
+    &.has-animation {
+        &::before {
+            width: 0;
+            transition: all ease 1s;
+        }
+    }
+    &.active-animation {
+        &::before {
+            width: 100%;
+        }
+    }
 }
+

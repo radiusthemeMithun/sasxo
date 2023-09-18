@@ -238,7 +238,7 @@
 //....team-feature....//
 
 .team-feature-wrap {
-    padding: 0 0 120px 0;
+    padding: 0 0 90px 0;
 }
 .team-feature-img {
     .image-box {
@@ -258,14 +258,17 @@
                         &:nth-child(3) {
                             bottom: -15px;
                             right: 125px;
+                            top: auto;
                         }
                         &:nth-child(4) {
                             top: 100px;
                             left: 120px;
+                            animation: move 2s ease infinite;
                         }
                         &:nth-child(5) {
                             bottom: 110px;
                             left: 190px;
+                            animation: move 2s ease infinite;
                         }
                     }
                 }
@@ -336,7 +339,7 @@
 //....project-feature....//
 
 .project-feature-wrap {
-    padding: 0 0 120px 0;
+    padding: 75px 0 20px 0;
 }
 .project-feature-img {
     .image-box {
@@ -351,7 +354,7 @@
                             left: auto;
                         }
                         &:nth-child(2) {
-                            top: 50px;
+                            top: 100px;
                             right: auto;
                             left: -100px;
                         }

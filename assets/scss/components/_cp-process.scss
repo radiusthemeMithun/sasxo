@@ -75,8 +75,7 @@
             gap: 40px;
             &:hover {
                 .icon {
-                    height: 70px;
-                    width: 70px;
+                    transform: scale(1);
                     background-color: $color-primary;
                     svg {
                         color: $color-white;
@@ -84,13 +83,14 @@
                 }
             }
             .icon {
-                height: 60px;
-                width: 60px;
-                border-radius: 60px;
+                height: 70px;
+                width: 70px;
+                border-radius: 70px;
                 background-color: #F8F8FF;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
+                transform: scale(.9);
                 transition: all .3s ease-in-out;
                 svg {
                     color: $color-primary;
