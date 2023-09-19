@@ -32,20 +32,34 @@
     left: 50%;
     top: 20px;
     z-index: 2;
-    width: 290px;
-    height: 585px;
+    width: 305px;
+    height: 625px;
     display: block;
     position: absolute;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url(../../media/iPhone/iPhone-frame.png);
     transform: translateX(-50%);
+    @include media-only ("xs", min) {
+        width: 286px;
+        height: 590px;
+    }
+    @include media-only ("sm", min) {
+        width: 260px;
+        height: 540px;
+    }
+    @include media-only ("lg", min) {
+        width: 290px;
+        height: 585px;
+    }
 }
 
 .screenshot-wrapper {
     .swiper-wrapper {
-        width: 320px;
-        height: 580px;
         padding: 35px 0 100px;
+        @include media-only ("lg", min) {
+            width: 320px;
+            height: 580px;
+        }
     }
 }

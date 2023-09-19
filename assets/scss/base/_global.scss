@@ -41,6 +41,9 @@ body {
 	font-size: 16px;
 	color: $color-body;
     font-weight: 400;
+    
+    // height: 100%;
+    // overflow: auto;
 }
 
 p {
@@ -237,8 +240,8 @@ html {
 }
 
 #main_content {
-	// position: relative;
-	// z-index: 10;
+	position: relative;
+	z-index: 10;
 	background-color: #fff;
 }
 
@@ -296,11 +299,8 @@ select {
     @include breakpoint("lg") {
         padding: 80px 0;
     }
-    @include breakpoint("md") {
-        padding: 70px 0;
-    }
     @include breakpoint("sm") {
-        padding: 50px 0;
+        padding: 70px 0;
     }
 }
 
@@ -335,10 +335,10 @@ section,
 
 
 
-.smoothed {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+// .smoothed {
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
 
 
 

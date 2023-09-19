@@ -39,9 +39,11 @@
 		position: relative;
 		text-transform: capitalize;
 		font-weight: 700;
+		font-size: 30px;
+		line-height: 40px;
 		@include media-only ("xs", min) {
-			font-size: 30px;
-			line-height: 40px;
+			font-size: 36px;
+			line-height: 45px;
 		}
 		@include media-only ("lg", min) {
 			font-size: 40px;

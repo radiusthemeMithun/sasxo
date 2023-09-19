@@ -1,7 +1,10 @@
 .counter-wrap {
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 95px 0;
+    padding: 70px 0 35px;
+    @include media-only ("sm", min) {
+        padding: 95px 0;
+    }
     &.style-2 {
         position: relative;
         z-index: 1;
@@ -52,6 +55,13 @@
 
 .counter-box {
     gap: 15px;
+    margin-bottom: 30px;
+    @include media-only ("xs", max) {
+        justify-content: center;
+    }
+    @include media-only ("sm", min) {
+        margin-bottom: 0;
+    }
     &.style-2 {
         .item-icon {
             svg {

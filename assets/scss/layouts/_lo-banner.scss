@@ -7,17 +7,17 @@
     background-color: #FFFBF8;
     position: relative;
     overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
     @include media-only (320px, min) {
         padding-top: 100px;
     }
     @include media-only ("xs", min) {
-        padding-top: 140px;
+        padding-top: 115px;
     }
 
     @include media-only ("md", min) {
         padding-top: 265px;
         padding-bottom: 110px;
+        clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
     }
 }
 
@@ -49,7 +49,10 @@
 
 .hero-layout-1 {
     .section-heading {
-        margin-bottom: 30px;
+        margin-bottom: 16px;
+        @include media-only ("xs", min) {
+            margin-bottom: 30px;
+        }
         .heading-title {
             text-transform: capitalize;
             position: relative;
@@ -84,7 +87,10 @@
         }
     }
     .about-list {
-        margin-bottom: 45px;
+        margin-bottom: 22px;
+        @include media-only ("xs", min) {
+            margin-bottom: 45px;
+        }
         ul {
             li {
                 font-weight: 500;
@@ -105,7 +111,7 @@
     }
     .button-wrapper {
         display: block;
-        margin-bottom: 44px;
+        margin-bottom: 22px;
         @include media-only (425px, min) {
             display: flex;
             gap: 20px;
@@ -113,7 +119,14 @@
             z-index: 1;
             position: relative;
         }
+        @include media-only ("xs", min) {
+            margin-bottom: 44px;
+        }
         .link {
+            margin-top: 20px;
+            @include media-only ("376px", min) {
+                margin-top: 0;
+            }
             a {
                 color: $color-black;
                 font-weight: 700;
@@ -278,13 +291,21 @@
         position: relative;
         z-index: 1;
         .small-img {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            z-index: -1;
+            display: none;
+            @include media-only ("xs", min) {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+            }
         }
     }
     .element-shape {
+        display: none;
+        @include media-only ("md", min) {
+            display: block;
+        }
         ul {
             li {
                 &:nth-child(1) {
@@ -356,9 +377,12 @@
 
 .user-rating-wrap {
     .shape-img {
-        position: absolute;
-        top: -110%;
-        right: 350px;
+      display: none;
+        @include media-only ("lg", min) {
+            position: absolute;
+            top: -110%;
+            right: 350px;
+        }
     }
     .text {
         color: $color-black;

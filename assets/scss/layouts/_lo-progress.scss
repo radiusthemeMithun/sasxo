@@ -3,6 +3,12 @@
  * Layout - Progress.
  */
 .progress-wrap {
-    padding: 120px 0 150px;
+    padding: 0px 0 80px;
+    @include media-only ("xs", min) {
+        padding: 85px 0 80px;
+    }
+    @include media-only ("lg", min) {
+        padding: 120px 0 150px;
+    }
 }
 

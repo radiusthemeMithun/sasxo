@@ -227,14 +227,17 @@
       0: {
         slidesPerView: 1,
       },
+      480: {
+        slidesPerView: 2,
+      },
       576: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 4,
       },
       1200: {
         slidesPerView: 5,

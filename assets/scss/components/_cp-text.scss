@@ -1,16 +1,31 @@
 .text-box {
     .heading-title {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
-        line-height: 50px;
+        line-height: 40px;
         text-transform: capitalize;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        @include media-only ("md", min) {
+            font-size: 36px;
+            line-height: 46px;
+            margin-bottom: 20px;
+        }
+        @include media-only ("lg", min) {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 30px;
+        }
     }
     p {
-        margin-bottom: 25px;
+        @include media-only ("md", min) {
+            margin-bottom: 25px;
+        } 
     }
     .about-list {
-        margin-bottom: 38px;
+        margin-bottom: 20px;
+        @include media-only ("md", min) {
+            margin-bottom: 38px;
+        } 
         ul {
             li {
                 font-weight: 500;
