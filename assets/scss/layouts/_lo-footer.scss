@@ -22,8 +22,8 @@
             display: block;
         }
         @include media-only (2201px, min) {
-            
-            height: 1438px;
+            height: 1045px;
+            bottom: -70px;
         }
     }
     &.style-2 {
