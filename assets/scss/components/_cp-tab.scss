@@ -51,9 +51,11 @@
 		background-color: #F9F9F9;
 		box-shadow: none;
 		padding: 20px;
-		width: 384px;
-		margin-left: auto;
-		margin-right: auto;
+		@include media-only ("xs", min) {
+			width: 384px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 		.nav-item {
 			display: inline-block;
 			margin-right: 10px;
@@ -90,15 +92,25 @@
 
 .tab--style--3 {
 	.nav-tabs {
-		border-bottom: 1px solid #dedede;
-		margin-bottom: 50px;
+		border-bottom: 0;
+		margin-bottom: 20px;
 		justify-content: space-between;
 		align-items: center;
+		@include media-only ("lg", min) {
+			border-bottom: 1px solid #dedede;
+			margin-bottom: 50px;
+		}
 		.nav-item {
-			max-width: 25%;
+			max-width: 100%;
 			margin-bottom: 10px;
+			@include media-only ("xs", min) {
+				max-width: 50%;
+			}
+			@include media-only ("md", min) {
+				max-width: 25%;
+			}
 			&:last-child {
-				margin-right: 0;
+				margin-bottom: 0;
 			}
 			.nav-link {
 				background-color: transparent;
@@ -140,6 +152,9 @@
 					text-transform: capitalize;
 					margin-left: 15px;
 					flex: 1;
+					@include media-only ("md", max) {
+						margin-bottom: 0;
+					}
 				}
 				&:focus {
 					outline: 0;

@@ -263,9 +263,15 @@
     padding: 0 0 90px 0;
 }
 .team-feature-img {
+    @include media-only ("sm", max) {
+        display: none;
+    }
     .image-box {
         .item-img {
             .element-shape {
+                @include media-only ("lg", max) {
+                    display: block;
+                }
                 ul {
                     li {
                         position: absolute;
@@ -275,12 +281,19 @@
                         }
                         &:nth-child(2) {
                             top: -2px;
-                            right: 50px;
+                            right: 120px;
+                            @include media-only ("md", min) {
+                                right: 50px;
+                            }
                         }
                         &:nth-child(3) {
-                            bottom: -15px;
-                            right: 125px;
+                            bottom: 0;
+                            right: 190px;
                             top: auto;
+                            @include media-only ("md", min) {
+                                right: 125px;
+                                bottom: -15px;
+                            }
                         }
                         &:nth-child(4) {
                             top: 100px;
@@ -320,9 +333,15 @@
     padding: 100px 0 0 0;
 }
 .management-feature {
+    @include media-only ("sm", max) {
+        display: none;
+    }
     .image-box {
         .item-img {
             .element-shape {
+                @include media-only ("lg", max) {
+                   display: block;
+                }
                 ul {
                     li {
                         position: absolute;
@@ -332,11 +351,18 @@
                         }
                         &:nth-child(2) {
                             top: -2px;
-                            right: 80px;
+                            right: 30px;
+                            @include media-only ("lg", min) {
+                                right: 80px;
+                            }
                         }
                         &:nth-child(3) {
                             bottom: -15px;
-                            right: 50px;
+                            right: 0;
+                            @include media-only ("lg", min) {
+                                right: 50px;
+                                bottom: -15px;
+                            }
                         }
                         &:nth-child(4) {
                             top: 100px;
@@ -364,21 +390,33 @@
     padding: 75px 0 20px 0;
 }
 .project-feature-img {
+    @include media-only ("sm", max) {
+        display: none;
+    }
     .image-box {
         .item-img {
             .element-shape {
+                @include media-only ("lg", max) {
+                    display: block;
+                 }
                 ul {
                     li {
                         position: absolute;
                         &:nth-child(1) {
                             top: 0;
-                            right: -50px;
+                            right: 0px;
                             left: auto;
+                            @include media-only ("lg", min) {
+                                right: -50px;
+                            }
                         }
                         &:nth-child(2) {
                             top: 100px;
                             right: auto;
-                            left: -100px;
+                            left: -50px;
+                            @include media-only ("lg", min) {
+                                left: -100px;
+                            } 
                         }
                     }
                 }
@@ -400,6 +438,9 @@
        .counter {
             gap: 70px;
             .sas-counter {
+                @include media-only ("xs", max) {
+                    margin-bottom: 30px;
+                }
                 .counterUp {
                     margin-bottom: 7px;
                     .post-fix {

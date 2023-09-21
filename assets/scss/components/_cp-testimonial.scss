@@ -5,7 +5,10 @@
 
 .testimonial-inner-2 {
     margin-top: 88px;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
+    @include media-only ("lg", min) {
+        margin-bottom: 160px;
+    }
     &.style-2 {
         margin-top: 40px;
         margin-bottom: 0;

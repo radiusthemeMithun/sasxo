@@ -244,8 +244,10 @@
     }
 
     &.sas-price-box-2 {
-        padding: 60px 45px;
         position: relative;
+        @include media-only ("xs", min) {
+            padding: 60px 45px;
+        }
         .tag {
             position: absolute;
             top: 0;

@@ -132,9 +132,19 @@
     background-color: #FEF7F2;
     padding: 0;
     border-radius: 0;
-    height: 473px;
+    height: 100%;
     position: relative;
+    @include media-only ("lg", min) {
+        height: 473px;
+    }
     .banner-text {
+        padding: 30px;
+        @include media-only ("xs", min) {
+            padding: 50px;
+        }
+        @include media-only ("md", min) {
+            padding: 80px 40px 40px;
+        }
         @include media-only ("lg", min) {
             margin-bottom: 0;
             padding: 110px 40px 0 80px;
@@ -153,6 +163,10 @@
         position: absolute;
         top: 120px;
         right: 42%;
+        display: none;
+        @include media-only ("md", min) {
+            display: block;
+        }
         svg {
             color: $color-black;
         }

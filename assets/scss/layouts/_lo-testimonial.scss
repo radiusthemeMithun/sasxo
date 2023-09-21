@@ -40,6 +40,10 @@
         justify-content: center;
         box-shadow: none;
         transition: all .3s ease-in-out;
+        visibility: hidden;
+        @include media-only ("sm", min) {
+            visibility: visible;
+        }
         &:hover {
             background-color: #FFF;
             box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
@@ -52,8 +56,10 @@
         }
     }
     .swiper-button-prev {
-        left: auto;
-        right: 80px;
+        @include media-only ("sm", min) {
+            left: auto;
+            right: 80px;
+        }
     }
 }
 
