@@ -4,6 +4,12 @@
  */
 
 .team-wrap {
+    .section-heading {
+        margin-bottom: 20px;
+        @include media-only ("lg", min) {
+            margin-bottom: 40px;
+        }
+    }
     &.style-2 {
         .button-style-2 {
             .btn-style-2 {

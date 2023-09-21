@@ -3,7 +3,10 @@
 .process-wrap {
     background-color: #238A59;
     z-index: 1;
-    padding: 90px 0 185px;
+    padding: 70px 0 40px;
+    @include media-only ("xs", min) {
+        padding: 90px 0 185px;
+    }
     .map-shape {
         position: absolute;
         top: 0;
@@ -11,7 +14,9 @@
         z-index: -1;
     }
     .section-heading {
-        margin-bottom: 120px;
+        @include media-only ("xs", min) {
+            margin-bottom: 120px;
+        }
         .heading-title {
             color: $color-white;
         }
@@ -114,9 +119,20 @@
 }
 
 .process-dash-line {
+    .curve-shape {
+        display: none;
+        @include media-only ("xs", min) {
+            display: block;
+        }
+    }
     .element { 
         li {
-            position: absolute;
+            position: inherit;
+            margin-bottom: 30px;
+            @include media-only ("xs", min) {
+                position: absolute;
+                margin-bottom: 0;
+            }
             .text {
                 color: $color-white;
                 font-family: $font-title;
@@ -124,24 +140,69 @@
                 font-weight: 600;
             }
             &:nth-child(1) {
-                bottom: -35px;
-                left: 216px;
+                bottom: -55px;
+                left: 28px;
+                @include media-only ("sm", min) {
+                    bottom: -50px;
+                    left: 50px;
+                }
+                @include media-only ("md", min) {
+                    bottom: -40px;
+                    left: 75px;
+                }
+                @include media-only ("lg", min) {
+                    bottom: -35px;
+                    left: 216px;
+                }
             }
             &:nth-child(2) {
                 top: -90px;
-                left: 33%;
+                left: 25%;
+                @include media-only ("sm", min) {
+                    left: 27%;
+                }
+                @include media-only ("md", min) {
+                    left: 29%;
+                }
+                @include media-only ("lg", min) {
+                    left: 33%;
+                }
             }
             &:nth-child(3) {
                 bottom: -90px;
-                left: 50%;
+                left: 46%;
+                @include media-only ("sm", min) {
+                    left: 47%;
+                }
+                @include media-only ("md", min) {
+                    left: 49%;
+                }
+                @include media-only ("lg", min) {
+                    left: 50%;
+                }
             }
             &:nth-child(4) {
                 top: -80px;
-                left: 59%;
+                left: 55%;
+                @include media-only ("sm", min) {
+                    left: 58%;
+                }
+                @include media-only ("md", min) {
+                    left: 60%;
+                }
+                @include media-only ("lg", min) {
+                    left: 59%;
+                }
             } 
             &:nth-child(5) {
                 bottom: -60px;
-                left: 76%;
+                left: 78%;
+                @include media-only ("md", min) {
+                    left: 80%;
+                }
+                @include media-only ("lg", min) {
+                    left: 76%;
+                }
             }       
         }
     }

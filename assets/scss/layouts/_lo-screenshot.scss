@@ -5,7 +5,9 @@
 
 .screenshot-wrap {
     background-color: #FBFAFF;
-    padding-bottom: 80px;
+    @include media-only ("lg", min) {
+        padding-bottom: 80px;
+    }
 }
 
 .screenshot-wrapper {

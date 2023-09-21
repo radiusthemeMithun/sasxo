@@ -5,6 +5,28 @@
 
 .blog-wrap {
     z-index: 1;
+    .section-heading {
+        margin-bottom: 0px;
+        @include media-only ("md", min) {
+            margin-bottom: 30px;
+        }
+    }
+    p {
+        @include media-only ("md", max) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.blog-wrap-2 {
+    position: relative;
+    z-index: 1;
+    .section-heading {
+        margin-bottom: 15px;
+        @include media-only ("sm", min) {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 

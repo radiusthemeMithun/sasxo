@@ -115,9 +115,13 @@
 }
 
 .feature-box-4 {
-    border-radius: 200px 20px 20px 20px;
+    border-radius: 100px 20px 20px 20px;
     background: #FFEFF2;
-    padding: 100px;
+    padding: 40px;
+    @include media-only ("xs", min) {
+        padding: 100px;
+        border-radius: 200px 20px 20px 20px;
+    }
     .image-box {
         ul {
             li {
@@ -129,9 +133,13 @@
         }
     }
     &.style-2 {
-        border-radius: 20px 20px 200px 20px;
+        border-radius: 20px 20px 100px 20px;
         background-color: #F9F9FF;
-        padding: 50px 35px 55px 35px;
+        padding: 40px;
+        @include media-only ("xs", min) {
+            padding: 50px 35px 55px 35px;
+            border-radius: 20px 20px 200px 20px;
+        }
         .image-box {
             ul {
                 li {

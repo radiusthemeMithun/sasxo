@@ -23,6 +23,7 @@
 
 .hero-bannar-wrap-2 {
     background-color: #F2FFF4;
+    padding: 100px 0 0 0;
     @include media-only ("md", min) {
         padding-top: 165px;
         padding-bottom: 0px;
@@ -30,10 +31,18 @@
 }
 
 .hero-bannar-wrap-3 {
-    background-image: url(../../media/banner/banner-9.svg);
-    background-repeat: no-repeat;
-    // background-size: cover;
-    padding: 170px 0 60px;
+    background-color: #4A41F0;
+    padding: 100px 0;
+    @include media-only ("md", min) {
+        padding: 165px 0 75px;
+    }
+    @include media-only ("lg", min) {
+        background-image: url(../../media/banner/banner-9.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 170px 0 60px;
+        background-color: transparent;
+    }
 }
 .hero-bannar-wrap-4 {
     padding: 244px 0 200px;
@@ -212,9 +221,13 @@
             }
             .heading-title {
                 color: $color-white;
-                font-size: 50px;
+                font-size: 40px;
                 font-weight: 700;
-                line-height: 65px;
+                line-height: 55px;
+                @include media-only ("lg", min) {
+                    font-size: 50px;
+                    line-height: 65px;
+                }
             }
             p {
                 color: $color-white;
@@ -250,9 +263,12 @@
 
 .video-area-wrap {
     gap: 30px;
-    .button-style-2 {
-        .fill-btn {
-            border-radius: 0;
+    @include media-only ("xs", max) {
+        text-align: center;
+    }
+    .sasxo-btn-3 {
+        @include media-only ("xs", max) {
+            margin-bottom: 15px;
         }
     }
 }
@@ -338,9 +354,17 @@
         position: relative;
         z-index: 1;
         .element-shape {
+            display: none;
+            @include media-only ("xs", min) {
+                display: block;
+            }
             ul {
                 li {
                     position: absolute;
+                    z-index: -1;
+                    @include media-only ("lg", min) {
+                        z-index: 1;
+                    }
                     &:nth-child(1) {
                         top: 80px;
                         left: 0;

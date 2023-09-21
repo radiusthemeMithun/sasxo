@@ -3,7 +3,10 @@
  */
 
 .about-wrap {
-    padding: 120px 0 105px;
+    padding: 40px 0 0 0;
+    @include media-only ("md", min) {
+        padding: 120px 0 105px;
+    }
     .text-box {
         @include media-only ("lg", min) {
             margin-left: -50px;

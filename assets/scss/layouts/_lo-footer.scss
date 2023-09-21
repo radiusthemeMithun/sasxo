@@ -2,28 +2,21 @@
  * Layout - Footer.
  */
 
-
  .footer-1 {
     background-color: #07122D;
     position: relative;
-    &::before {
-        content: "";
-        height: 783px;
-        width: 100%;
-        background-image: url(../../media/bg/footer-1.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
+    .shape {
         position: absolute;
-        bottom: 0;
+        top: -45px;
         left: 0;
+        right: 0;
         display: none;
-        @include media-only ("lg", min) {
+        @include media-only ("1900px", min) {
             display: block;
         }
-        @include media-only (2201px, min) {
-            height: 1045px;
-            bottom: -70px;
+        svg {
+            color: $color-white;
+            width: 100%;
         }
     }
     &.style-2 {
@@ -32,6 +25,11 @@
         }
         &::before {
             display: none;
+        }
+        .footer-top {
+            @include media-only ("lg", min) {
+                padding-top: 115px;
+            }
         }
     }
     &.style-3 {
@@ -156,8 +154,8 @@
     @include media-only ("md", min) {
         padding: 100px 0 60px;
     }
-    @include media-only ("lg", min) {
-        padding: 120px 0 100px 0;
+    @include media-only ("1900px", min) {
+        padding: 430px 0 100px 0;
     }
 }
 
@@ -315,6 +313,11 @@
     }
     .ft-bottom-link {
         gap: 30px;
+        justify-content: start;
+        @include media-only ("md", min) {
+            justify-content: end;
+            gap: 30px;
+        }
         li {
             &:last-child {
                 .link {
@@ -337,6 +340,10 @@
                     transform: translateY(-50%);
                     right: -15px;
                     transition: all .4s ease-in-out;
+                    display: none;
+                    @include media-only ("md", min) {
+                        display: block;
+                    }
                 }
                 &:hover {
                     color: $color-white;

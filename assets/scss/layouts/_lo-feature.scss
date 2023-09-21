@@ -62,6 +62,13 @@
     }
 }
 
+.feature-wrp-4 {
+    padding-top: 80px;
+    @include media-only ("lg", min) {
+        padding-top: 0;
+    }
+}
+
 .feature-wrap-5 {
     z-index: 1;
     padding: 110px 0 150px;

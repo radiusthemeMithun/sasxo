@@ -4,21 +4,16 @@
 
 .pricing-wrap {
     overflow: hidden;
-    padding-top: 120px;
-    @media only screen and (max-width: 1199px) {
-        padding-bottom: 80px;
+    .section-heading {
+        margin-bottom: 0px;
+        @include media-only ("md", min) {
+            margin-bottom: 30px;
+        }
+        p {
+            @include media-only ("md", max) {
+                margin-bottom: 20px;
+            }
+        }
     }
-    @media only screen and (max-width: 991px) {
-        padding-bottom: 50px;
-    }
 }
 
-
-.ayo-pricing-wrap-2 {
-    background: #0D0B0B;
-    padding: 140px 0px 50px 0px;
-}
-
-.ayo-pricing-wrap-2.style-2 {
-    padding: 140px 0px;
-}

@@ -98,9 +98,14 @@
 
 .button-list {
 	ul {
-		display: flex;
-		gap: 10px;
+		@include media-only ("xs", min) {
+			display: flex;
+			gap: 10px;
+		}
 		li {
+			@include media-only ("xs", max) {
+				margin-bottom: 15px;
+			}
 			.brand-btn {
 				border: 1px solid var(--color-white);
 				border-radius: 5000px;

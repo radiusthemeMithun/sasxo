@@ -1,16 +1,44 @@
+.banner-wrap {
+    padding-bottom: 80px;
+    @include media-only ("lg", min) {
+        padding-bottom: 120px;
+    }
+    @include media-only ("1900px", min) {
+        transform: translateY(100%);
+        padding-bottom: 0;
+    }
+}
+
 .banner-layout {
     background-image: url(../../media/banner/banner-4.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 40px 100px 0 120px;
+    padding: 40px;
     background-color: $color-primary;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
     z-index: 1;
+    @include media-only ("xs", min) {
+        padding: 70px;
+    }
+    @include media-only ("md", min) {
+        padding: 40px 100px 0 120px;
+    }
+    @include media-only ("1900px", min) {
+        margin-top: -310px;
+    }
     .item-img {
         z-index: 1;
-        bottom: -22%;
+        display: none;
+        @include media-only ("md", min) {
+            bottom: -20px;
+            display: block;
+        }
+        @include media-only ("lg", min) {
+            bottom: -22%;
+            display: block;
+        }
         .small-img {
             position: absolute;
             bottom: 0;
@@ -19,6 +47,10 @@
         }
     }
     .element-shape {
+        display: none;
+        @include media-only ("md", min) {
+            display: block;
+        }
         li {
             position: absolute;
             &:nth-child(1) {
@@ -32,11 +64,14 @@
         }
     }
     &.style-2 {
-        padding: 50px 80px 45px;
+        padding: 40px;
         border-radius: 10px;
+        @include media-only ("sm", min) {
+            padding: 50px 80px 45px;
+        }
         @include media-only ("lg", min) {
-            transform: translateY(110px);
-            margin-top: -110px;
+            transform: translateY(230px);
+            margin-top: -250px;
         }
         .banner-text {
             margin-bottom: 0;

@@ -14,7 +14,10 @@
 .swiper-slide {
     &.swiper-slide-active {
         .screenshot-box {
-            transform: scale(1.032);
+            transform: scale(.9);
+            @include media-only ("xs", min) {
+                transform: scale(1.032);
+            }
             .item-img {
                 border: 0;
                 img {
@@ -40,23 +43,30 @@
     background-repeat: no-repeat;
     background-image: url(../../media/iPhone/iPhone-frame.png);
     transform: translateX(-50%);
+    display: none;
     @include media-only ("xs", min) {
         width: 286px;
         height: 590px;
+        display: block;
     }
     @include media-only ("sm", min) {
         width: 260px;
         height: 540px;
+        display: block;
     }
     @include media-only ("lg", min) {
         width: 290px;
         height: 585px;
+        display: block;
     }
 }
 
 .screenshot-wrapper {
     .swiper-wrapper {
-        padding: 35px 0 100px;
+        padding: 0px 0 50px;
+        @include media-only ("xs", min) {
+            padding: 35px 0 100px;
+        }
         @include media-only ("lg", min) {
             width: 320px;
             height: 580px;

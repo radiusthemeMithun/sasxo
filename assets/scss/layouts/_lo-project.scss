@@ -5,8 +5,11 @@
 
 
  .project-wrap {
-    padding: 120px 0 0 0;
+    padding: 80px 0 0 0;
     z-index: 2;
+    @include media-only ("lg", min) {
+        padding: 120px 0 0 0;
+    }
     .section-heading {
         @include media-only ("lg", min) {
             width: 521px;

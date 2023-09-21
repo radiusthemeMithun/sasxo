@@ -4,7 +4,7 @@
     margin-bottom: 24px;
     border-radius: 10px;
     border: 1px solid #BEBEBE;
-    @include media-only ("md", min) {
+    @include media-only ("lg", min) {
         margin-bottom: 0px;
     }
     &:hover {
@@ -12,7 +12,7 @@
             border-radius:  10px 10px 0px 0px;
             a {
                 img {
-                    transform: scale(1.2);
+                    transform: scale(1.255);
                     border-radius:  10px 10px 0px 0px;
                 }
             }
@@ -39,9 +39,12 @@
         position: relative;
         .title {
             margin-bottom: 11px;
-            font-size: 25px;
+            font-size: 23px;
             line-height: 35px;
             font-weight: 700;
+            @include media-only ("md", min) {
+                font-size: 24px;
+            }
             a {
                 color: var(--color-black);
                 transition: all .4s ease-in-out;
@@ -70,13 +73,6 @@
                     .rt-tag {
                         background-color: $color-primary;
                         color: $color-white;
-                    }
-                }
-            }
-            .item-content {
-                .title {
-                    a {
-
                     }
                 }
             }
@@ -210,7 +206,7 @@
     li {
         color: #717171;
         font-size: 16px;
-        @include media-only ("xs", min) {
+        @include media-only ("md", min) {
             font-size: 18px;
         }
         i {

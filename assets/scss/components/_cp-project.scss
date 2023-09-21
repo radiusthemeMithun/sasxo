@@ -31,10 +31,13 @@
     }
     .content {
         .title {
-            font-size: 18px;
+            font-size: 15px;
             font-style: normal;
             font-weight: 600;
             line-height: 26px;
+            @include media-only ("lg", min) {
+                font-size: 18px;
+            }
         }
         .project-btn {
             height: 35px;
