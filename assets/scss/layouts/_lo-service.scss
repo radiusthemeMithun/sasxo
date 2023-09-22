@@ -12,11 +12,15 @@
             margin-left: auto;
         }
     }
-    .shape {
+    .bg-shape {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translateX(-50%);
         z-index: -1;
+        display: none;
+        @include media-only ("sm", min) {
+           display: block;
+        }
     }
 }

@@ -1,8 +1,18 @@
-.ayo-error-box-1 {
-    margin-bottom: 50px;
+// .error-wrap {
+//     @include media-only ("lg", min) {
+//         padding-bottom: 70px;
+//     }
+// }
+
+
+.error-box-1 {
+    // margin-bottom: 50px;
     .error-full-image {
         text-align: center;
-        margin-bottom: 90px;
+        margin-bottom: 30px;
+        @include media-only ("md", min) {
+            margin-bottom: 90px;
+        }
     }
     .content {
         text-align: center;
@@ -10,16 +20,6 @@
             width: 466px;
             margin-right: auto;
             margin-left: auto;
-        }
-        .title {
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 50px;
-            margin-bottom: 17px;
-            span {
-                color: $color-primary;
-                font-weight: 400;
-            }
         }
         p {
             font-size: 18px;

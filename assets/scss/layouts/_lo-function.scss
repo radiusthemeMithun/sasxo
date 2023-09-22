@@ -4,7 +4,13 @@
  */
 .function-wrap {
     z-index: 1;
-    padding: 80px 0 120px;
+    // padding: 80px 0 120px;
+    @include media-only ("xs", max) {
+        padding: 70px 0 0 0;
+    }
+    @include media-only ("lg", min) {
+        padding: 80px 0 120px;
+    }
     .shape {
         position: absolute;
         top: 0;
@@ -15,7 +21,15 @@
 
 .function-wrap-2 {
     z-index: 1;
-    padding-top: 60px;
+    @include media-only ("xs", max) {
+        padding: 70px 0 0 0;
+    }
+    @include media-only ("md", min) {
+        padding-top: 80px;
+    }
+    @include media-only ("lg", min) {
+        padding-top: 60px;
+    }
     .shape {
         position: absolute;
         top: 0;

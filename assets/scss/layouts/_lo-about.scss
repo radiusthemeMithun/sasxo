@@ -16,11 +16,18 @@
 
 .about-wrap-2 {
     background-color: #FAFCFF;
-    padding-top: 180px;
+    padding-top: 80px;
+    @include media-only ("lg", min) {
+        padding-top: 180px;
+    }
     .item-img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        margin-top: 30px;
+        @include media-only ("lg", min) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-top: 0;
+        }
     }
 }
 
@@ -35,9 +42,16 @@
 }
 
 .about-wrap-4 {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
+    @include media-only ("lg", min) {
+        padding-bottom: 120px;
+    }
 }
+
 .about-tab-wrap {
     padding-top: 20px;
-    padding-bottom: 120px;
+    padding-bottom: 70px;
+    @include media-only ("lg", min) {
+        padding-bottom: 120px;
+    }
 }

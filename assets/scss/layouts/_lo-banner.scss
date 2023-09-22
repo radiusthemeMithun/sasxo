@@ -45,9 +45,12 @@
     }
 }
 .hero-bannar-wrap-4 {
-    padding: 244px 0 200px;
+    padding: 110px 0;
     position: relative;
     z-index: 1;
+    @include media-only ("md", min) {
+        padding: 244px 0 200px;
+    }
     .shape {
         position: absolute;
         top: 0;
@@ -476,8 +479,11 @@
 //.....Inner Banner...//
 
 .Inner-banar-wrap {
-    padding: 130px 0 50px;
+    padding: 80px 0;
     background-color: #F8FCFF;
+    @include media-only ("lg", min) {
+        padding: 130px 0 50px;
+    }
 }
 
 .breadcurmb-wrap {

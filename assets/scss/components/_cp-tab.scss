@@ -181,6 +181,9 @@
 	.nav-tabs {
 		border-bottom: 0;
 		margin-bottom: 40px;
+		@include media-only ("xs", max) {
+			gap: 12px;
+		}
 		.nav-item {
 			display: inline-block;
 			margin-right: 10px;

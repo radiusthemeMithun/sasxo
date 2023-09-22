@@ -118,10 +118,9 @@
             justify-content: center;
             background-color: $color-white;
             border: 3px solid $color-primary;
-            @include media-only ("lg", min) {
-                margin-top: -45px;
-                transform: translateY(-45px);
-            }
+            margin-top: -45px;
+            transform: translateY(-45px);
+            
             svg {
                 color: $color-primary;
             }

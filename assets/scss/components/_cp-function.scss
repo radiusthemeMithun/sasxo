@@ -1,6 +1,9 @@
 
 
 .function-box {
+    @include media-only ("xs", max) {
+        margin-bottom: 70px;
+    }
     .text-box {
         p {
             margin-bottom: 15px;
@@ -20,11 +23,20 @@
             }
         }
     }
+    &.style-2 {
+        @include media-only ("xs", max) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .function-box-2 {
     position: relative;
     z-index: 1;
+    display: none;
+    @include media-only ("xs", min) {
+        display: block;
+    }
     .item-img {
         position: relative;
         text-align: center;

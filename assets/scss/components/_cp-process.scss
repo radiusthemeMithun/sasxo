@@ -77,7 +77,10 @@
             }
         }
         .process-listing {
-            gap: 40px;
+            gap: 20px;
+            @include media-only ("xs", min) {
+                gap: 40px;
+            }
             &:hover {
                 .icon {
                     transform: scale(1);
