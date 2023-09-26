@@ -24,3 +24,15 @@
         }
     }
 }
+
+.service-wrap-4 {
+    background-color: #f8f8f9;
+    padding-bottom: 55px;
+    @include media-only ("lg", min) {
+        padding-bottom: 95px;
+    }
+    &.style-2 {
+        background-color: transparent;
+    }
+}
+

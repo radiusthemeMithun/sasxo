@@ -176,3 +176,117 @@
         }
     }
 }
+
+.single-team-wrap {
+    @include media-only ("lg", min) {
+        padding: 120px 0 85px;
+    }
+}
+
+.single-team-box {
+    .phone-mail-wrapper {
+        margin-bottom: 20px;
+        .phone-wrap {
+            margin-bottom: 10px;
+            .text {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 30px;
+                color: $color-black;
+            }
+            a {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                transition: all .4s ease-in-out;
+                color: $color-black;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+        .mail-wrap {
+            margin-bottom: 0;
+        }
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+}
+
+.team-widget {
+    .content {
+        padding-top: 20px;
+        .title {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 24px;
+            transition: all .4s ease-in-out;
+            font-weight: 600;
+        }
+        .designation {
+            font-size: 16px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .item-social {
+            margin-top: 12px;
+            ul {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.single-skill-wrapper {
+    .single-skill {
+        margin-bottom: 28px;
+        padding-bottom: 5px;
+        position: relative; 
+        // &::before {
+        //     content: "";
+        //     height: 1px;
+        //     width: 100%;
+        //     background-color: #d1d1d1;
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     border-radius: 20px;
+        // }
+        .title-bar {
+            .title {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                margin-bottom: 17px;
+                color: var(--color-black);
+            }
+        }
+        .skill-bar {
+            background-color: #d9d9d9;
+            border-radius: 10px;
+            height: 5px;
+            padding: 0;
+            border: 0;
+            .skill-per {
+                height: 5px;
+                width: 0;
+                background: $color-primary;
+                border-radius: 10px;
+                transition: 2s linear;
+                position: relative;
+                &::before {
+                    content: attr(data-per);
+                    position: absolute;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: $color-black;
+                    bottom: 20px;
+                    right: 0;
+                    font-family: var(--font-title);
+                }
+            }
+        }
+    }
+}

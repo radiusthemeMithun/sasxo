@@ -18,3 +18,10 @@
         }
     }
 }
+
+.team-wrap-2 {
+    padding-bottom: 55px;
+    @include media-only ("lg", min) {
+        padding-bottom: 95px;
+    }
+}

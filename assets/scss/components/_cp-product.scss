@@ -1,11 +1,29 @@
+.product-wrap {
+    padding: 62px 0 40px;
+    @include media-only ("md", min) {
+        padding: 60px 0 40px;
+    }
+    @include media-only ("lg", min) {
+        padding: 100px 0 85px;
+    }
+}
+
+.product-wrap-2 {
+    @include media-only ("lg", min) {
+        padding: 0 0 80px;
+    }
+}
+
 .shop-top-area {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    @include media-only ("xs", min) {
+        margin-bottom: 30px;
+    }
     .showing-item {
         font-size: 20px;
         line-height: 26px;
         color: $color-black;
-        font-weight: 500;
-        margin-bottom: 20px;
+        font-weight: 600;
         text-align: center;
         @include media-only ("xs", min) {
            margin-bottom: 0;
@@ -29,7 +47,7 @@
                 color: var(--color-black);
                 font-size: 18px;
                 line-height: 23px;
-                font-weight: 500;
+                font-weight: 600;
                 background-color: #fff;
                 border-radius: 10px;
                 position: relative;
@@ -40,7 +58,7 @@
                 &::after {
                     content: "\f107";
                     font-family: Font Awesome\ 5 Free;
-                    font-weight: 600;
+                    font-weight: 900;
                     font-size: 14px;
                     border: none;
                     position: absolute;
@@ -53,6 +71,7 @@
                 li {
                     .dropdown-item {
                         color: $color-black;
+                        font-weight: 500;
                         &:hover {
                             background: $color-primary;
                             color: $color-white;
@@ -64,7 +83,7 @@
     }
 }
 
-.ayo-product-box-1 {
+.product-box-1 {
     margin-bottom: 30px;
     &:hover {
         .item-img {
@@ -102,7 +121,6 @@
             bottom: 0px;
             left: 50%;
             transform: translateX(-50%);
-            // width: 100%;
             text-align: center;
             visibility: hidden;
             opacity: 0;
@@ -110,21 +128,15 @@
             .cart-btn {
                 font-family: $font-title;
                 display: inline-block;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 25px;
-                color: #191D27;
-                padding: 13px 27px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: $color-black;
+                padding: 12px 25px;
                 text-align: center;
                 background: $color-white;
-                border-radius: 10px;
+                border-radius: 30px;
                 transition: all .3s ease-out 0s;
-                @include media-only (321px, min) {
-                    padding: 16px 35px;
-                }
-                @include media-only ("md", min) {
-                    font-size: 20px;
-                }
                 &:hover {
                     background: $color-primary;
                     color: $color-white;
@@ -164,15 +176,11 @@
         .title {
             margin-bottom: 0;
             a {
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 28px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 34px;
                 color: $color-black;
                 transition: all .4s ease-in-out;
-                @include media-only ("xs", min) {
-                    font-size: 30px;
-                    line-height: 38px;
-                }
                 &:hover {
                     color: $color-primary;
                 }
@@ -180,17 +188,14 @@
         }
         .price {
             font-family: $font-title;
-            font-weight: 400;
-            font-size: 18px;
+            font-weight: 600;
+            font-size: 20px;
             color: $color-black;
-            @include media-only ("xs", min) {
-                font-size: 24px;
-            }
         }
     }
 }
 
-.ayo-single-product-wrap {
+.single-product-wrapper {
     .product-wrapper-slider {
         position: relative;
         .product-img-area-1 {
@@ -262,6 +267,13 @@
     opacity: 1;
 }
 
+.single-product-wrap {
+    padding: 80px 0 70px;
+    @include media-only ("lg", min) {
+        padding: 120px 0 110px;
+    }
+}
+
 
 .product-description-box {
     .top-content {
@@ -276,16 +288,11 @@
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 21px;
-                color: #717171;
             }
             .title {
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 28px;
-                @include media-only ("xs", min) {
-                    font-size: 30px;
-                    line-height: 38px;
-                }
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 34px;
             }
             .stock {
                 font-weight: 500;
@@ -294,7 +301,7 @@
                 color: $color-black;
                 i {
                     color: #0ABF47;
-                    font-size: 15px;
+                    font-size: 16px;
                     margin-right: 5px;
                 }
             }
@@ -305,7 +312,7 @@
             .wish-btn {
                 height: 40px;
                 width: 40px;
-                background: rgba(0, 0, 0, 0.1);
+                background: rgba(0, 0, 0, 0.3);
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
@@ -346,18 +353,17 @@
             margin-bottom: 25px;
             .new-price {
                 font-family: $font-title;
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 24px;
                 line-height: 30px;
                 color: $color-black;
                 margin-right: 5px;
             }
             .old-price {
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 21px;
                 text-decoration-line: line-through;
-                color: #9C9C9C;
                 font-family: $font-body;
                 margin-right: 5px;
             }
@@ -380,8 +386,8 @@
                 font-family: $font-title;
                 line-height: 20px;
                 color: $color-black;
+                font-weight: 500;
             }
-            color: #a1a1a1;
         }
         .rt-check-list {
             margin-bottom: 27px;
@@ -395,8 +401,8 @@
                     .quantity-box.style-1 {
                         display: flex;
                         align-items: center;
-                        border: 1px solid #d9d9d9;
-                        border-radius: 10px;
+                        border: 1px solid $color-body;
+                        border-radius: 30px;
                         background-color: transparent;
                         padding: 12px 10px;
                         width: 90px;
@@ -447,7 +453,7 @@
                         padding: 11px 22px;
                         transition: all .3s ease-in-out;
                         text-transform: capitalize;
-                        border-radius: 10px;
+                        border-radius: 30px;
                         &:hover {
                             background: $color-primary;
                         }
@@ -458,8 +464,10 @@
     }
 }
 
-.ayo-single-product-details-wrap {
-    padding: 55px 0px;
+.single-product-details-wrap {
+    @include media-only ("lg", min) {
+        padding: 55px 0 0 0;
+    }
     position: relative;
     z-index: 1;
     .product-details {

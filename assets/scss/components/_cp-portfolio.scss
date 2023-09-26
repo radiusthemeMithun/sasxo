@@ -218,7 +218,7 @@
     }
 }
 
-.ayo-portfolio-box-2 {
+.portfolio-box-2 {
     &:hover {
         .item-img {
             a {
@@ -273,7 +273,7 @@
         padding: 20px;
         &:hover {
             &::after {
-                background: #145AFF;
+                background-color: $color-primary;
                 transition: all .4s ease-in-out;
             }
         }
@@ -281,7 +281,7 @@
             content: "";
             height: 100%;
             width: 2px;
-            background: #145AFF;
+            background-color: $color-primary;
             position: absolute;
             top: 20px;
             left: 0;
@@ -292,19 +292,13 @@
         }
         .title {
             margin-bottom: 0px;
+            font-size: 24px;
+            line-height: 38px;
+            font-weight: 600;
             a {
-                font-size: 20px;
-                line-height: 28px;
                 color: var(--color-black);
                 transition: all .4s ease-in-out;
-                @include media-only ("xs", min) {
-                    font-size: 24px;
-                    line-height: 32px;
-                }
-                @include media-only ("md", min) {
-                    font-size: 30px;
-                    line-height: 38px;
-                }
+                
                 &:hover {
                     color: var(--color-primary);
                 }
@@ -319,7 +313,7 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 30px;
-                color: #145AFF;
+                color: $color-primary;
                 transition: all .4s ease-in-out;
                 position: relative;
                 &:hover {
@@ -327,7 +321,7 @@
                     &::before {
                         opacity: 1;
                         text-indent: 65px;
-                        color: #145AFF;
+                        color: $color-primary;
                     }
                 }
                 &::before {
@@ -534,21 +528,12 @@
 }
 
 .image-column {
-    max-width: 35vw;
+    max-width: 25vw;
     width: 100%;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    @include media-only ("xs", min) {
-        max-width: 25vw;
-    }
-    @include media-only ("sm", min) {
-        max-width: 35vw;
-    }
-    @include media-only ("md", min) {
-        max-width: 25vw;
-    }
     @include media-only ("lg", min) {
         max-width: 15vw;
     }
@@ -574,22 +559,59 @@
             display: block;
         }
         &:nth-child(2) {
-            top: 150px;
+            @include media-only ("lg", min) {
+                top: 150px;
+            }
         }
         &:nth-child(3) {
-            top: 280px;
+            @include media-only ("lg", min) {
+                top: 280px;
+            }
         }
         &:nth-child(4) {
-            top: 400px;
+            @include media-only ("lg", min) {
+                top: 400px;
+            }
         }
         &:nth-child(5) {
-            top: 480px;
+            @include media-only ("lg", min) {
+                top: 480px;
+            }
         }
     }
     .active {
         opacity: 1;
         transition: clip-path .6s ease,-webkit-clip-path .6s ease;
         clip-path: inset(0 0 0 0);
+    }
+}
+
+
+.portfolio-metro-wrap {
+    padding-bottom: 55px;
+    @include media-only ("sm", min) {
+        padding-bottom: 30px;
+    }
+    @include media-only ("lg", min) {
+        padding-bottom: 70px;
+    }
+}
+
+.portfolio-slider-wrap {
+    
+    padding-bottom: 54px;
+    
+    @include media-only ("lg", min) {
+        padding-bottom: 94px;
+    }
+}
+
+.portfolio-tiles-wrap {
+    
+    padding-bottom: 54px;
+    
+    @include media-only ("lg", min) {
+        padding-bottom: 94px;
     }
 }
 
