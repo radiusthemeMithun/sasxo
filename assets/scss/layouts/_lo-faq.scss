@@ -12,6 +12,13 @@
     }
 }
 
+.faq-wrap-2 {
+    padding-bottom: 70px;
+    @include media-only ("lg", min) {
+        padding-bottom: 110px;
+    }
+}
+
 .faq-box-1 {
     display: none;
     @include media-only ("lg", min) {

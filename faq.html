@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sasxo | Blog Grid Page </title>
+    <title>Sasxo | Faq Page </title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="media/fav.png">
@@ -84,7 +84,7 @@
                                             <ul class="sub-menu">
                                                 <li><a href="about.html"> About Page</a></li>
                                                 <li><a href="pricing.html">Pricing Page</a></li>
-                                                <li><a href="faq.html">Faq page</a></li>
+                                                <li><a href="faq.html" class="active">Faq page</a></li>
                                                 <li><a href="404.html">Error page</a></li>
                                                 <li><a href="team.html">Team Page</a></li>
                                                 <li><a href="team-details.html">Team Details</a></li>
@@ -111,7 +111,7 @@
                                                 Blog <i class="fa-solid fa-angle-down"></i>
                                             </a>
                                             <ul class="sub-menu">
-                                                <li><a href="blog.html" class="active">Blog Grid</a></li>
+                                                <li><a href="blog.html">Blog Grid</a></li>
                                                 <li><a href="blog-list.html">Blog List</a></li>
                                                 <li><a href="single-blog.html">Single Blog</a></li>
                                             </ul>
@@ -239,11 +239,11 @@
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="breadcurmb-wrap">
-                                    <h1 class="title">Blog Page</h1>
+                                    <h1 class="title">Faq Page</h1>
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb mb-0">
                                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Faq</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -257,157 +257,127 @@
                     </div>
                 </section>
 
-                <section class="blog-wrap-2 section-padding">
+                <section class="faq-wrap-2 section-padding">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".1s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-1.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Top Post</a></div>
+                        <div class="row">
+                            <div class="col-lg-9 mx-auto">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Correction Analysis Design
+                                                <i class="fa-solid fa-angle-up accr-plus"></i>
+                                                <i class="fa-solid fa-angle-down accr-minus"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="description animate__fadeInUp animate__animated">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper. Ornare non nulla faucibus pulvinar as any vulputate neque. The as Suscipit tristique nam enim mauris consectetur the platea. The Cras aliquet accumsan
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>David Mark</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">The design and services that Printing any Demo!</a></h3>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                How does the free trial work?
+                                                <i class="fa-solid fa-angle-up accr-plus"></i>
+                                                <i class="fa-solid fa-angle-down accr-minus"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+                                            <div class="accordion-body">
+                                                <p class="description animate__fadeInUp animate__animated">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper. Ornare non nulla faucibus pulvinar as any vulputate neque. The as Suscipit tristique nam enim mauris consectetur the platea. The Cras aliquet accumsan
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-2.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">New Idea!</a></div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="description accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                How do you weigh different criteria in process?
+                                                <i class="fa-solid fa-angle-up accr-plus"></i>
+                                                <i class="fa-solid fa-angle-down accr-minus"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="description animate__fadeInUp animate__animated">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper. Ornare non nulla faucibus pulvinar as any vulputate neque. The as Suscipit tristique nam enim mauris consectetur the platea. The Cras aliquet accumsan
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>David Mark</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Mobile app development for funded companies.</a></h3>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                What do you look for in a founding team?
+                                                <i class="fa-solid fa-angle-up accr-plus"></i>
+                                                <i class="fa-solid fa-angle-down accr-minus"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="description animate__fadeInUp animate__animated">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper. Ornare non nulla faucibus pulvinar as any vulputate neque. The as Suscipit tristique nam enim mauris consectetur the platea. The Cras aliquet accumsan
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".3s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-3.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Trading</a></div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                Email & Live chat Sopprot.
+                                                <i class="fa-solid fa-angle-up accr-plus"></i>
+                                                <i class="fa-solid fa-angle-down accr-minus"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="description animate__fadeInUp animate__animated">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper. Ornare non nulla faucibus pulvinar as any vulputate neque. The as Suscipit tristique nam enim mauris consectetur the platea. The Cras aliquet accumsan
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>David Mark</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Apps we built been trending on the App Store</a></h3>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".4s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-6.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Top Post</a></div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                Can I switch to a different plan?
+                                                <i class="fa-solid fa-angle-up accr-plus"></i>
+                                                <i class="fa-solid fa-angle-down accr-minus"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="description animate__fadeInUp animate__animated">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper. Ornare non nulla faucibus pulvinar as any vulputate neque. The as Suscipit tristique nam enim mauris consectetur the platea. The Cras aliquet accumsan
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Jerome Bell</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Awaited Technology Final Change the World</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".5s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-7.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Business</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Eleanor Pena</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Artificial Intelligence that will blow your mind</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".6s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-8.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Startup</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Devon Lane</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">That Will Help You Get 1% Better Every Day</a></h3>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".7s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-9.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">News</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Floyd Miles</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Start Honing These 4 Habits Today</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".8s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-10.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Works</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Jenny Wilson</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">I wish I’d Asked More to Turbocharge My Career</a></h3>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                Can I switch to a different plan?
+                                                <i class="fa-solid fa-angle-up accr-plus"></i>
+                                                <i class="fa-solid fa-angle-down accr-minus"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="description animate__fadeInUp animate__animated">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper. Ornare non nulla faucibus pulvinar as any vulputate neque. The as Suscipit tristique nam enim mauris consectetur the platea. The Cras aliquet accumsan
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".9s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-11.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Creative</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Cody Fisher</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Principles that UX that Should be Aware of</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="sasxo-button text-center mt-3">
-                            <a href="service.html" class="sasxo-btn">
-                                <span class="icon">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
-                                <span class="button-text">
-                                    <span class="title">See More</span>
-                                </span>
-                            </a>
                         </div>
                     </div>
                 </section>

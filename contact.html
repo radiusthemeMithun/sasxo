@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sasxo | Blog Grid Page </title>
+    <title>Sasxo | Contact Page </title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="media/fav.png">
@@ -111,7 +111,7 @@
                                                 Blog <i class="fa-solid fa-angle-down"></i>
                                             </a>
                                             <ul class="sub-menu">
-                                                <li><a href="blog.html" class="active">Blog Grid</a></li>
+                                                <li><a href="blog.html">Blog Grid</a></li>
                                                 <li><a href="blog-list.html">Blog List</a></li>
                                                 <li><a href="single-blog.html">Single Blog</a></li>
                                             </ul>
@@ -239,11 +239,11 @@
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="breadcurmb-wrap">
-                                    <h1 class="title">Blog Page</h1>
+                                    <h1 class="title">Contact Page</h1>
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb mb-0">
                                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -257,160 +257,93 @@
                     </div>
                 </section>
 
-                <section class="blog-wrap-2 section-padding">
+                <section class="contact-wrap section-padding">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".1s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-1.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Top Post</a></div>
+                        <div class="sasxo-contact-page">
+                            <div class="row gutters-30">
+                                <div class="col-lg-5 col-md-9 mx-auto">
+                                    <div class="contact-info">
+                                        <h3 class="subtitle">Get In Touch</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nunc semper nulla faucibus .</p>
+                                        <div class="contact-list">
+                                            <div class="item-icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+                                            <div class="content">
+                                                <div class="label">Visit us :</div>
+                                                <p class="info">27 Division St, New York,
+                                                    NY 10002, USA</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-list">
+                                            <div class="item-icon"><i class="fa-solid fa-envelope"></i></div>
+                                            <div class="content">
+                                                <div class="label">Mail us :</div>
+                                                <div class="phone">
+                                                    <a href="mailto:info@gmail.com">Info@gmail.com</a>
+                                                </div>
+                                                <div class="phone">
+                                                    <a href="mailto:info@gmail.com">Info@gmail.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contact-list">
+                                            <div class="item-icon"><i class="fa-solid fa-phone"></i></div>
+                                            <div class="content">
+                                                <div class="label">Call us :</div>
+                                                <div class="phone">
+                                                    <a href="+1800123456789">+1 (800) 123 456 789</a>
+                                                </div>
+                                                <div class="phone">
+                                                    <a href="+1800123456789">+1 (800) 123 456 789</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>David Mark</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">The design and services that Printing any Demo!</a></h3>
+                                </div>
+                                <div class="col-lg-7 col-md-9 mx-auto">
+                                    <div class="rt-contact">
+                                        <div class="sub-title">Contact Us</div>
+                                        <h3 class="title">Send A Message</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nunc semper nulla faucibus .</p>
+                                        <form action="#" class="contact-form-style-1 rt-contact-form">
+                                            <div class="row">
+                                                <div class="col-xl-6 col-lg-6 col-md-6 form-group">
+                                                    <input type="text" class="form-control rt-form-control" placeholder="Your E-mail"
+                                                        name="email" id="email" data-error="Email field is required" required="">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-md-6 form-group">
+                                                    <input type="text" class="form-control rt-form-control" placeholder="Phone Number"
+                                                        name="phone" id="phone" data-error="Phone field is required" required="">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                                
+                                                <div class="col-xl-12 form-group">
+                                                    <textarea name="text" id="message" class="form-control rt-form-control rt-textarea"
+                                                        placeholder="Text here" data-error="Message field is required" required=""></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                                <div class="col-xl-12 form-group">
+                                                    <button type="submit" class="submit-btn">Send Message</button>
+                                                </div>
+                                                <div class="form-response"></div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-2.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">New Idea!</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>David Mark</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Mobile app development for funded companies.</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".3s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-3.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Trading</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>David Mark</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Apps we built been trending on the App Store</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".4s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-6.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Top Post</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Jerome Bell</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Awaited Technology Final Change the World</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".5s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-7.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Business</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Eleanor Pena</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Artificial Intelligence that will blow your mind</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".6s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-8.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Startup</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Devon Lane</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">That Will Help You Get 1% Better Every Day</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".7s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-9.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">News</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Floyd Miles</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Start Honing These 4 Habits Today</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".8s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-10.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Works</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Jenny Wilson</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">I wish I’d Asked More to Turbocharge My Career</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".9s" data-wow-duration=".8s">
-                                <div class="blog-box style-2">
-                                    <div class="item-img">
-                                        <a href="blog.html" class="img-fluid w-100"><img src="media/blog/blog-11.jpg" alt="blog"></a>
-                                        <div class="tag"><a href="blog.html" class="rt-tag">Creative</a></div>
-                                    </div>
-                                    <div class="item-content">
-                                        <ul class="entry-meta">
-                                            <li><a href="blog.html"><i class="fa-regular fa-user"></i>Cody Fisher</a></li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>18 Jun, 2022</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog.html">Principles that UX that Should be Aware of</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="sasxo-button text-center mt-3">
-                            <a href="service.html" class="sasxo-btn">
-                                <span class="icon">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
-                                <span class="button-text">
-                                    <span class="title">See More</span>
-                                </span>
-                            </a>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="sasxo-map-area">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14604.944020115528!2d90.42640979999999!3d23.77460885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1679029720269!5m2!1sen!2sbd" width="1296" height="510" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
+
 
                 <section class="banner-wrap">
                     <div class="container">

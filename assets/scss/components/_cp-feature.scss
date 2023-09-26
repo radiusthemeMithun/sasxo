@@ -76,13 +76,14 @@
     }
     .info-box {
         transition: all .4s ease-in-out;
+        transform: scale(.99);
         .icon-shape {
             height: 60px;
             width: 60px;
             border-radius: 60px;
         }
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1);
             .icon-shape {
                 border-radius: 70px;
                 background-color: #FF760E;
