@@ -311,13 +311,9 @@
         }
         .title {
             font-weight: 600;
-            font-size: 20px;
-            line-height: 35px;
+            font-size: 30px;
+            line-height: 45px;
             margin-bottom: 25px;
-            @include media-only ("xs", min) {
-                font-size: 30px;
-                line-height: 45px;
-            }
             @include media-only ("lg", min) {
                 font-size: 40px;
                 line-height: 55px;
@@ -341,12 +337,9 @@
         padding: 10px 0px 50px;
         .title {
             font-weight: 600;
-            font-size: 19px;
+            font-size: 22px;
             line-height: 28px;
             margin-bottom: 12px;
-            @include media-only ("xs", min) {
-                font-size: 22px;
-            }
         }
         p {
             margin-bottom: 30px;
@@ -509,6 +502,10 @@
     }
 }
 
+.single-blog-wrap {
+    padding-bottom: 70px;
+}
+
 .single-blog-bottom-wrap {
     background: $color-white;
     padding: 70px 0px 65px;
@@ -519,12 +516,11 @@
         padding: 0px 0px 30px 0px;
         .title {
             font-weight: 700;
-            font-size: 19px;
+            font-size: 22px;
             line-height: 28px;
             margin-bottom: 25px;
             text-align: center;
             @include media-only ("xs", min) {
-                font-size: 22px;
                 text-align: left;
             }
         }
@@ -543,22 +539,21 @@
                 }
             }
             .item-img {
-                text-align: center;
+                @include media-only ("xs", max) {
+                    text-align: center;
+                }
                 img {
                     height: 60px;
                     width: 60px;
                     border-radius: 50%;
                 }
-                @include media-only ("xs", min) {
-                    text-align: left;
-                }
             }
             .content {
-                text-align: center;
-                margin-top: 20px;
-                @include media-only ("xs", min) {
-                    flex: 1;
-                    margin-top: 0;
+                flex: 1;
+                margin-top: 0;
+                @include media-only ("xs", max) {
+                    margin-top: 20px;
+                    text-align: center;
                 }
                 .title {
                     font-weight: 500;
@@ -604,11 +599,8 @@
         .contact-form-style-1 {
             .title {
                 font-weight: 700;
-                font-size: 19px;
+                font-size: 22px;
                 line-height: 28px;
-                @include media-only ("xs", min) {
-                    font-size: 22px;
-                }
             }
             .label {
                 font-size: 15px;
@@ -619,7 +611,7 @@
             .form-group {
                 margin-bottom: 15px;
                 .rt-form-control {
-                    background: #f9f9f9;
+                    background-color: #f9f9f9;
                     border: 0;
                     border-radius: 10px;
                     &::placeholder {

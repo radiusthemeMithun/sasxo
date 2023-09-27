@@ -599,6 +599,11 @@ if ($(".testimonial-slider-wrap-2")) {
     spaceBetween: 24,
     slidesPerView: 4,
     loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -701,6 +706,8 @@ $("#quantity-holder,#quantity-holder2")
     $("[data-list-img]").removeClass("active"), $('[data-list-img="'.concat(t, '"]')).addClass("active");
 });
 
+
+
 /* ===================================
    PopUp
   ======================================= */
@@ -802,9 +809,6 @@ if (!!window.IntersectionObserver) {
   }
 });
       
-      
-
-
 
 /*-------------------------------------
     Countdown activation code

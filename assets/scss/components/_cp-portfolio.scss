@@ -152,18 +152,6 @@
     }
 }
 
-.ayo-portfolio-inner-wrap {
-    margin-bottom: 50px;
-    .ayo-button {
-        text-align: center;
-        margin-top: 25px;
-        .ayo-btn {
-            svg {
-                color: $color-white;
-            }
-        }
-    }
-}
 
 .portfolio-box.style-2 {
     margin-bottom: 35px;
@@ -451,19 +439,20 @@
             position: relative;
             padding: 20px 0px 20px 20px;
             width: 100%;
+            border-bottom: 1px solid #CED1D1;
             @include media-only ("lg", min) {
                 padding: 40px 0px 45px 120px;
             }
             &:hover {
-                &::before {
+                &::after {
                     width: 100%;
                     visibility: visible;
                     opacity: 1;
-                    transition: width 0.4s ease;
-                    left: 0;
+                    transition: width 0.5s ease;
                 }
                 .list-title {
                    color: $color-primary;
+                   transform: translateX(14px);
                    .description {
                         color: $color-primary;
                     }
@@ -475,21 +464,21 @@
             &::after {
                 content: "";
                 height: 1px;
-                width: 100%;
-                background: #CED1D1;
+                width: 0;
+                background-color: $color-primary;
                 position: absolute;
-                bottom: 0;
+                bottom: -1px;
                 left: 0;
-                opacity: 1;
-                visibility: visible;
-                transition: all 0.3s ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 500ms ease;
             }
             .list-title {
                 display: block;
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 28px;
-                transition: all 50ms cubic-bezier(0.87, 0, 0.13, 1);
+                transition: all 500ms ease;
                 color: $color-black;
                 @include media-only ("sm", min) {
                     font-weight: 600;
@@ -500,7 +489,7 @@
                     font-size: 16px;
                     line-height: 21px;
                     color: #484949;
-                    transition: all 50ms cubic-bezier(0.87, 0, 0.13, 1);
+                    transition: all 1s;
                     @include media-only ("sm", min) {
                         font-size: 18px;
                         line-height: 23px;
@@ -508,7 +497,7 @@
                 }
             }
             .list-button {
-                transition: all 50ms cubic-bezier(0.87, 0, 0.13, 1);
+                transition: all 1s;
                 color: #484949;
                 @include media-only ("xs", min) {
                     position: absolute;
@@ -528,61 +517,32 @@
 }
 
 .image-column {
-    max-width: 25vw;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    @include media-only ("lg", min) {
-        max-width: 15vw;
-    }
     .col-img {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
         opacity: 0;
-        overflow: hidden;
-        clip-path: inset(0 100% 0 0);
-        transition: clip-path 0s ease .6s,-webkit-clip-path 0s ease .6s;
+        visibility: hidden;
+        transition: all 500ms ease;
+        position: absolute;
+        transform: scale(0);
+        top: 0;
+        left: 35%;
+        z-index: 10;
+        @include media-only (480px, min) {
+            left: 25%;
+        }
+        @include media-only ("md", min) {
+            top: 100px;
+            left: 35%;
+        }
         &:hover {
             opacity: 1;
-            transition: clip-path .6s ease,-webkit-clip-path .6s ease;
-            clip-path: inset(0 0 0 0);
+            visibility: visible;
+            transform: scale(1);
         }
-        img {
-            width: 100%;
-            height: auto;
-            will-change: transform;
-            object-fit: cover;
-            display: block;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
         }
-        &:nth-child(2) {
-            @include media-only ("lg", min) {
-                top: 150px;
-            }
-        }
-        &:nth-child(3) {
-            @include media-only ("lg", min) {
-                top: 280px;
-            }
-        }
-        &:nth-child(4) {
-            @include media-only ("lg", min) {
-                top: 400px;
-            }
-        }
-        &:nth-child(5) {
-            @include media-only ("lg", min) {
-                top: 480px;
-            }
-        }
-    }
-    .active {
-        opacity: 1;
-        transition: clip-path .6s ease,-webkit-clip-path .6s ease;
-        clip-path: inset(0 0 0 0);
     }
 }
 
