@@ -128,6 +128,38 @@
       });
   }
 
+  /*-------------------------------------
+  Pagepiling
+  -------------------------------------*/
+  if ($(window).width() > 991) {
+    if ($('#pagepiling').length) {
+      $('#pagepiling').pagepiling({
+        menu: '#menu',
+        scrollingSpeed: 280,
+        loopBottom: true,
+        afterLoad: function(anchorLink, index) {
+          if ($('#pagepiling-counter').length) {
+            $('.counter-slider').counterUp({
+              delay: 50,
+              time: 5000
+            });
+          }
+        }
+      });
+    }
+  }
+
+    /*-------------------------------------
+  After Load All Content Add a Class In Body
+  -------------------------------------*/
+  $(window).on('load', addNewClass);
+
+  function addNewClass() {
+    $('body').imagesLoaded().done(function(instance) {
+      $('body').addClass('loaded');
+    });
+  }
+
   /*===================================
    // Section background image 
   ====================================*/
