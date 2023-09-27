@@ -178,6 +178,7 @@
 }
 
 .single-team-wrap {
+    padding: 80px 0 45px;
     @include media-only ("lg", min) {
         padding: 120px 0 85px;
     }

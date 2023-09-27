@@ -694,53 +694,9 @@
     }
 }
 
-.ayo-single-portfolio-wrap {
-    background: $color-gray;
-    padding-bottom: 100px;
-    position: relative;
-    z-index: 1;
-}
-
-.ayo-single-portfolio-wrapper-box {
-    position: relative;
-    @include media-only (320px, min) {
-        padding-top: 100px;
-    }
-    @include media-only ("xs", min) {
-        padding-top: 140px;
-    }
-
-    @include media-only ("md", min) {
-        padding-top: 230px;
-    }
-    .blur-shape-area {
-        display: none;
-        @include media-only ("lg", min) {
-            display: block;
-        }
-        ul {
-            li {
-                position: absolute;
-                width: 395px;
-                height: 395px;
-                border-radius: 50%;
-                filter: blur(250px);
-                &:nth-child(1) {
-                    background: #FFBA7A;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                }
-                &:nth-child(2) {
-                    background: #B18CFF;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    z-index: -1;
-                }
-            }
-        }
+.single-portfolio-wrap {
+    @include media-only ("lg", min) {
+        padding-bottom: 110px;
     }
 }
 
@@ -765,9 +721,9 @@
         animation-delay: 0s;
     }
     .title {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 28px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
         margin-bottom: 15px;
         @include media-only ("xs", min) {
             font-size: 30px;
@@ -778,7 +734,7 @@
         margin-bottom: 20px;
     }
     .meta-wrap {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
         .item-meta {
             span {
                 font-family: $font-title;
@@ -786,63 +742,6 @@
                 font-size: 16px;
                 line-height: 30px;
                 color: $color-black;
-            }
-        }
-    }
-}
-
-.ayo-portfolio-navigation-area {
-    padding-top: 80px;
-    .prev-btn,.next-btn {
-        a {
-            font-family: $font-title;
-            font-size: 18px;
-            line-height: 22px;
-            color: $color-black;
-            display: inline-block;
-            font-weight: 500;
-            transition: all .4s ease-in-out;
-            &:hover {
-                color: $color-primary;
-                i {
-                    transform: translateX(-5px);
-                    color: $color-primary;
-                }
-            }
-            i {
-                transition: all .4s ease-in-out;
-                color: $color-black;
-            }
-        }
-
-    }
-    .prev-btn {
-        margin-bottom: 20px;
-        @include media-only ("xs", min) {
-            text-align: left;
-            margin-bottom: 0;
-        }
-        a {
-            i {
-                margin-right: 5px;
-            }
-        }
-    }
-    .next-btn {
-        text-align: left;
-        @include media-only ("xs", min) {
-            text-align: right;
-        }
-        a {
-            &:hover {
-                color: $color-primary;
-                i {
-                    transform: translateX(5px);
-                    color: $color-primary;
-                }
-            }
-            i {
-                margin-left: 5px;
             }
         }
     }
