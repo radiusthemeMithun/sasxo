@@ -2,6 +2,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 70px 0 35px;
+    // background-attachment: fixed;
+    // background-position: center top;
     @include media-only ("sm", min) {
         padding: 95px 0;
     }

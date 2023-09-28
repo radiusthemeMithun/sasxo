@@ -128,37 +128,6 @@
       });
   }
 
-  /*-------------------------------------
-  Pagepiling
-  -------------------------------------*/
-  if ($(window).width() > 991) {
-    if ($('#pagepiling').length) {
-      $('#pagepiling').pagepiling({
-        menu: '#menu',
-        scrollingSpeed: 280,
-        loopBottom: true,
-        afterLoad: function(anchorLink, index) {
-          if ($('#pagepiling-counter').length) {
-            $('.counter-slider').counterUp({
-              delay: 50,
-              time: 5000
-            });
-          }
-        }
-      });
-    }
-  }
-
-    /*-------------------------------------
-  After Load All Content Add a Class In Body
-  -------------------------------------*/
-  $(window).on('load', addNewClass);
-
-  function addNewClass() {
-    $('body').imagesLoaded().done(function(instance) {
-      $('body').addClass('loaded');
-    });
-  }
 
   /*===================================
    // Section background image 
@@ -786,27 +755,32 @@ function mousemove_portfolio_hover_effect() {
 $(function() {
   mousemove_portfolio_hover_effect();
 });
-
-//Intersection Observer
-if (!!window.IntersectionObserver) {
-  let observer = new IntersectionObserver((entries, observer) => {
+  /*-------------------------------------
+  Intersection Observer
+  -------------------------------------*/
+  if (!!window.IntersectionObserver) {
+    let observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add("active-animation");
-              observer.unobserve(entry.target);
-          }
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active-animation");
+          //entry.target.src = entry.target.dataset.src;
+          observer.unobserve(entry.target);
+        }
       });
-  }, {
+    }, {
       rootMargin: "0px 0px -100px 0px"
-  });
-  document.querySelectorAll('.has-animation').forEach(block => {
+    });
+    document.querySelectorAll('.has-animation').forEach(block => {
       observer.observe(block)
-  });
+    });
   } else {
-      document.querySelectorAll('.has-animation').forEach(block => {
-          block.classList.remove('has-animation')
-      });
+    document.querySelectorAll('.has-animation').forEach(block => {
+      block.classList.remove('has-animation')
+    });
   }
+
+
+   
 
 		
 /* ===================================
