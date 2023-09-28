@@ -209,6 +209,49 @@
    });
 
 
+  /* ===================================
+    Page Progress Bottom To Top
+  ======================================= */
+    if ($(".progress-circle-wrap").length) {
+      var progressPath = document.querySelector(".progress-circle-wrap path");
+      var pathLength = progressPath.getTotalLength();
+      progressPath.style.transition = progressPath.style.WebkitTransition =
+        "none";
+      progressPath.style.strokeDasharray = pathLength + " " + pathLength;
+      progressPath.style.strokeDashoffset = pathLength;
+      progressPath.getBoundingClientRect();
+      progressPath.style.transition = progressPath.style.WebkitTransition =
+        "stroke-dashoffset 10ms linear";
+      var updateProgress = function () {
+        var scroll = $(window).scrollTop();
+        var height = $(document).height() - $(window).height();
+        var progress = pathLength - (scroll * pathLength) / height;
+        progressPath.style.strokeDashoffset = progress;
+      };
+      updateProgress();
+      $(window).scroll(updateProgress);
+      var offset = 50;
+      var duration = 550;
+      jQuery(window).on("scroll", function () {
+        if (jQuery(this).scrollTop() > offset) {
+          jQuery(".progress-circle-wrap").addClass("active-progress");
+        } else {
+          jQuery(".progress-circle-wrap").removeClass("active-progress");
+        }
+      });
+      jQuery(".progress-circle-wrap").on("click", function (event) {
+        event.preventDefault();
+        jQuery("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          duration
+        );
+        return false;
+      });
+    }
+
+
 
   /*=====================================
   // Screenshot-slider
@@ -779,41 +822,6 @@ $(function() {
     });
   }
 
-
-   
-
-		
-/* ===================================
-    Back To Top
-  ======================================= */
-  var minSpeed 		= 500;
-  var maxSpeed		= 1500;
-  $(".ayo-bc-totop").off().on('click', function(e) {
-    e.preventDefault();
-    var speed		= ($(window).scrollTop()-$(window).height())/2;
-    if(speed < minSpeed){speed = minSpeed;}
-    if(speed > maxSpeed){speed = maxSpeed;}
-    $("html, body").animate({ scrollTop: 0 }, speed);
-    return false;
-  });
-
-  $(window).on('scroll', function(e) {
-  var WinOffset	= $(window).scrollTop();
-  var totop		= $('a.ayo-bc-totop');
-
-
-    var scrollPercent = 100 * WinOffset / ($(document).height() - $(window).height());
-    totop.find('.progress').css({height: scrollPercent + '%'});
-
-
-  if(totop.length){
-    if(WinOffset > 300){
-      totop.addClass('active');
-    }else{
-      totop.removeClass('active');
-    }
-  }
-});
       
 
 /*-------------------------------------
@@ -931,63 +939,6 @@ $(function() {
     });
   });
 
-
-
-  $(document).ready(function () {
-    var upBall = $(".translate-up-down");
-    if (upBall.length) {
-        $(window).on("scroll", function () {
-            var cryptoBannerImg = $(".translate-up-down");
-            var y = window.scrollY;
-            var x;
-            x = cryptoBannerImg.offset().top;
-            x = x - 400;
-
-            let animationValue = 1;
-            animationValue = (-1* (y - x)) / 8;          
-
-            let animationStop = 100;
-
-            if (animationValue < 0) {
-                animationValue > 0;
-            }
-
-            if (animationValue > animationStop) {
-                animationValue = animationStop;
-            }
-
-            cryptoBannerImg.css("transform", `translateY(${animationValue}px)`);
-        });
-    }
-});
-
-$(document).ready(function () {
-  var downBall = $(".translate-up-down2");
-if (downBall.length) {
-$(window).on("scroll", function () {
-  var cryptoBannerImg = $(".translate-up-down2");
-  var y = window.scrollY;
-  var x;
-  x = cryptoBannerImg.offset().top;
-  x = x - 400;
-
-  let animationValue = 1;
-  animationValue = (y - x) / 8;  
-
-  let animationStop = 100;
-
-  if (animationValue < 0) {
-      animationValue > 0;
-  }
-
-  if (animationValue > animationStop) {
-      animationValue = animationStop;
-  }
-
-  cryptoBannerImg.css("transform", `translateY(${animationValue}px)`);
-});
-}
-});
   
 })(jQuery);
 

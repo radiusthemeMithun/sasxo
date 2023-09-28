@@ -87,57 +87,6 @@
 	z-index: 9999999;
 }
 
-/*======================================
-// Back-to-top
-=====================================*/
-
-.ayo-bc-totop {
-    position: fixed;
-    z-index: 15;
-    bottom: 46px;
-    right: 40px;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--color-primary);
-    border-radius: 20px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transform: translateY(120px);
-}
-.ayo-bc-totop .progress-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: block;
-    border-radius: 50%;
-}
-.ayo-bc-totop .progress {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    background-color: var(--color-primary);
-}
-.ayo-bc-totop.active {
-    transform: translateY(0);
-}
-.ayo-bc-totop.active .bc-svg {
-    transform: rotate(0deg) translateX(0px);
-    transition: all .3s ease;
-}
-.ayo-bc-totop .bc-svg {
-   color: var(--color-black);
-}
-
-
 
 .mb--24 {
 	margin-bottom: 24px !important;
@@ -154,4 +103,112 @@
 .mt--60 {
   margin-top: 60px !important;
 }
+
+/*======================================
+// Back-to-Top
+=====================================*/
+
+@media (min-width: 576px) {
+  .progress-circle-wrap.active-progress {
+    opacity: 1;
+  }
+}
+
+.progress-circle-wrap {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.75rem);
+  transition: all 200ms linear, margin-right 0ms;
+  &::after {
+    position: absolute;
+    content: "\f102";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    text-align: center;
+    font-size: 15px;
+    color: $color-white;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    transition: all 200ms linear;
+  }
+  &::before {
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-color: $color-primary;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    content: "";
+    border-radius: 60px;
+    z-index: -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-circle-wrap {
+    transition: none;
+  }
+}
+
+.progress-circle-wrap.active-progress {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.progress-circle-wrap:after {
+  position: absolute;
+  content: "\f102";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-align: center;
+  font-size: 15px;
+  color: $color-white;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  transition: all 200ms linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-circle-wrap:after {
+    transition: none;
+  }
+}
+
+.progress-circle-wrap svg path {
+  fill: none;
+}
+
+.progress-circle-wrap svg.progress-circle path {
+  stroke: #fff;
+  stroke-width: 2;
+  box-sizing: border-box;
+  transition: all 200ms linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-circle-wrap svg.progress-circle path {
+    transition: none;
+  }
+}
+
 

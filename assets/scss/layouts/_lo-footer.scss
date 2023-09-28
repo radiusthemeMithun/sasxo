@@ -76,7 +76,7 @@
                     .link {
                         color: $color-black;
                         &::before {
-                            color: $color-black; 
+                            background-color: $color-black;
                         }
                         &:hover {
                             color: $color-primary;
@@ -231,7 +231,6 @@
                 &:hover {
                     &::before {
                         width: 100%;
-                        -webkit-transition: width 0.4s ease;
                         transition: width 0.4s ease;
                         visibility: visible;
                         opacity: 1;

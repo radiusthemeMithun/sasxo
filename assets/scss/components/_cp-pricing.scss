@@ -18,7 +18,7 @@
         background-color: #F84436;
         visibility: hidden;
         opacity: 0;
-        transition: all .31s ease-in-out;
+        transition: all .8s;
         z-index: -1;
     }
     @include media-only ("lg", min) {
